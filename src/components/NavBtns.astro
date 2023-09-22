@@ -1,0 +1,203 @@
+---
+import { Image } from "astro:assets";
+
+import tailwindSVG from "../assets/tw.svg";
+import reactSVG from "../assets/react.svg";
+import nextSVG from "../assets/next.svg";
+import astroSVG from "../assets/astro.svg";
+import tsSVG from "../assets/ts-logo-512.svg";
+import htmlSVG from "../assets/html.svg";
+import cssSVG from "../assets/css.svg";
+import pythonSVG from "../assets/python.svg";
+import twitterSVG from "../assets/twitter.svg";
+import discordSVG from "../assets/discord.svg";
+
+interface Props {
+  mobile?: boolean;
+}
+
+const { mobile = false } = Astro.props;
+---
+
+<div
+  class={`${
+    mobile
+      ? "max-[959px]:grid gap-y-2 pt-2 hidden"
+      : "hidden min-[960px]:grid bg-animate"
+  } grow xl:h-full grid-rows-4 xl:grid-rows-2 xl:grid-cols-2`}
+>
+  <a href="/about" class="grid content-center justify-center py-4">
+    <span
+      class="bg-violet-400 overflow-hidden text-2xl text-center hidden min-[960px]:inline"
+    >
+      🥰🤪😴🤬💫🤌🫶🐸🍜🍙🍱🍶🚄🛫
+    </span>
+    <span
+      class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+    >
+      Who am I?
+    </span>
+    <span
+      class="bg-violet-400 overflow-hidden text-2xl text-center hidden min-[960px]:inline"
+    >
+      ✈️🧳🥇🎮🔮♠️ ♥️ ♦️ ♣️🎴📸🖥📚🔭
+    </span>
+  </a>
+  <a href="/projects" class="grid content-center justify-center py-4">
+    <span
+      class="bg-neutral-800 overflow-hidden text-2xl text-center hidden min-[960px]:flex justify-center items-center gap-x-10"
+    >
+      <Image
+        src={tailwindSVG}
+        alt="Tailwind CSS"
+        class="h-6 w-6 skew-x-[10deg]"
+      />
+      <Image src={reactSVG} alt="React" class="h-6 w-6 skew-x-[10deg]" />
+      <Image src={nextSVG} alt="Next.js" class="h-6 w-6 skew-x-[10deg]" />
+      <Image src={astroSVG} alt="Astro" class="h-6 w-6 skew-x-[10deg]" />
+    </span>
+    <span
+      class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+    >
+      What do I do?
+    </span>
+    <span
+      class="bg-neutral-800 overflow-hidden text-2xl text-center hidden min-[960px]:flex justify-center items-center gap-x-10"
+    >
+      <Image src={tsSVG} alt="TypeScript" class="h-6 w-6 skew-x-[10deg]" />
+      <Image src={htmlSVG} alt="HTML5" class="h-6 w-6 skew-x-[10deg]" />
+      <Image src={cssSVG} alt="CSS3" class="h-6 w-6 skew-x-[10deg]" />
+      <Image
+        src={pythonSVG}
+        alt="Python"
+        class="w-6 skew-x-[10deg] translate-y-0.5"
+      />
+    </span>
+  </a>
+  <a href="/blog" class="grid content-center justify-center py-4">
+    <span
+      class="bg-rose-400 overflow-hidden text-2xl text-center hidden min-[960px]:inline"
+    >
+      🤬 hot takes 🔥
+    </span>
+    <span
+      class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+    >
+      My blog
+    </span>
+    <span
+      class="bg-rose-400 overflow-hidden text-2xl text-center hidden min-[960px]:inline"
+    >
+      💭 thoughts 🤔
+    </span>
+  </a>
+  <a href="/contact" class="grid content-center justify-center py-4">
+    <span
+      class="bg-amber-500 overflow-hidden text-xl text-center hidden min-[960px]:flex justify-center items-center"
+    >
+      <Image src={twitterSVG} alt="X.com" class="h-6 w-6 skew-x-[10deg] mx-3" />
+      <Image
+        src={discordSVG}
+        alt="Discord"
+        class="h-6 w-6 skew-x-[10deg] ml-3 mr-5"
+      />
+       and maybe other stuff
+    </span>
+    <span
+      class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+    >
+      Contact me
+    </span>
+    <span
+      class="bg-amber-500 overflow-hidden text-xl text-center hidden min-[960px]:flex justify-center items-center gap-x-10"
+      >📧 you can also e-mail me</span
+    >
+  </a>
+
+  <style>
+    a {
+      position: relative;
+      transition: 0.2s;
+    }
+
+    a span {
+      transition: 0.3s;
+    }
+
+    @media (min-width: 960px) {
+      a:hover span {
+        transform: scale(1.2);
+      }
+    }
+
+    @media (max-width: 959px) {
+      a:focus span {
+        color: #5b21b6;
+      }
+    }
+
+    a:not(:hover) span {
+      transform: scale(1);
+    }
+
+    .bg-animate a span:first-child {
+      position: absolute;
+      align-self: center;
+      left: 10%;
+      width: 0.2rem;
+      height: 0rem;
+      transform: skew(-10deg) translateY(-2.5rem);
+      color: transparent;
+
+      transition:
+        height 0.3s ease-in-out 0s,
+        width 0.7s ease-in-out 0.3s,
+        color 0.1s linear 0.9s;
+    }
+
+    .bg-animate a:hover span:first-child {
+      height: 2rem;
+      width: 80%;
+      color: white;
+    }
+
+    .bg-animate a span:first-child img {
+      opacity: 0;
+      transition: opacity 0.1s linear 0.9s;
+    }
+
+    .bg-animate a:hover span:first-child img {
+      opacity: 1;
+    }
+
+    .bg-animate a span:last-child {
+      position: absolute;
+      align-self: center;
+      right: 10%;
+      width: 0.2rem;
+      height: 0rem;
+      transform: skew(-10deg) translateY(2.5rem);
+      color: transparent;
+
+      transition:
+        height 0.3s ease-in-out 0s,
+        width 0.7s ease-in-out 0.3s,
+        color 0.1s linear 0.9s;
+    }
+
+    .bg-animate a:hover span:last-child {
+      height: 2rem;
+      width: 80%;
+      color: white;
+    }
+
+    .bg-animate a span:last-child img {
+      opacity: 0;
+      transition: opacity 0.1s linear 0.9s;
+    }
+
+    .bg-animate a:hover span:last-child img {
+      opacity: 1;
+    }
+  </style>
+</div>

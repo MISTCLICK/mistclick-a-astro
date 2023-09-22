@@ -1,0 +1,12 @@
+---
+import NavBtns from "../components/NavBtns.astro";
+import NavMain from "../components/NavMain.astro";
+---
+
+<>
+  <NavMain />
+  <div class="grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-x-2">
+    <NavBtns mobile />
+    <slot />
+  </div>
+</>
