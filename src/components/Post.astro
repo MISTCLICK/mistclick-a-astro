@@ -25,7 +25,7 @@ const {
 
 <article class="relative pb-6">
   <img
-    src={Astro.url + post.frontmatter.imageURL}
+    src={post.frontmatter.imageURL}
     alt={post.frontmatter.title}
     class={`py-8 ${!showImage ? "hidden" : ""}`}
   />
