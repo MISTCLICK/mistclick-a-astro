@@ -1,0 +1,21 @@
+---
+import Base from "../layouts/Base.astro";
+import SubMain from "../layouts/SubMain.astro";
+
+import "../styles/md.scss";
+
+const page = (await Astro.glob("../content/non-blogposts/about.md")).at(0)!;
+---
+
+<Base
+  title="About me | MISTCLICK's den"
+  description="Here you can find a short personal statement of mine. Think of it what you like. :)"
+>
+  <SubMain>
+    <div class="grow p-6 flex flex-col items-center">
+      <article class="md:max-w-[55%]">
+        <page.Content />
+      </article>
+    </div>
+  </SubMain>
+</Base>

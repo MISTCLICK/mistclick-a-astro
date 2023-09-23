@@ -26,14 +26,12 @@ const { post } = Astro.props;
 ---
 
 <Base
-  title="MISTCLICK's blog"
-  description="Here you can find all my blogposts, hot takes and thoughts. :)"
+  title={`${post.frontmatter.title} | MISTCLICK's blog`}
+  description={`${post.frontmatter.description} | MISTCLICK's blog`}
 >
   <SubMain>
-    <div class="w-full h-full p-6 flex justify-center">
-      <div class="max-w-[55%]">
-        <Post post={post} />
-      </div>
+    <div class="grow p-6 self-center md:max-w-[55%]">
+      <Post post={post} />
     </div>
   </SubMain>
 </Base>

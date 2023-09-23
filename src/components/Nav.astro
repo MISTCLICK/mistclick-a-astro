@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 ---
 
 <nav
-  class="w-full h-28 p-5 bg-gradient-to-br from-amber-700 to-violet-700 text-white flex font-inter relative overflow-hidden min-[500px]:justify-between"
+  class="w-full p-5 bg-gradient-to-br from-amber-700 to-violet-700 text-white flex font-inter relative min-[500px]:justify-between"
 >
   <div
     class="flex flex-row gap-x-5 h-fit self-center justify-self-center w-full md:w-fit"
@@ -15,7 +15,7 @@ import { Image } from "astro:assets";
         alt="My GitHub avatar"
         width={1024}
         height={1024}
-        class="hidden min-[500px]:inline w-12 md:w-20 rounded-full drop-shadow-2xl"
+        class="w-12 md:w-20 rounded-full drop-shadow-2xl"
       />
     </a>
 
@@ -40,7 +40,7 @@ import { Image } from "astro:assets";
     </div>
   </div>
   <div
-    class="flex gap-x-5 -ml-4 md:mr-5 self-center max-[400px]:text-xs max-sm:text-sm sm:text-lg md:text-xl font-semibold underline-offset-[0.3rem]"
+    class="flex max-[500px]:flex-col gap-x-5 gap-y-2 -ml-4 md:mr-5 self-center max-[400px]:text-xs max-sm:text-sm sm:text-lg md:text-xl font-semibold underline-offset-[0.3rem]"
   >
     <a
       href="/about"
