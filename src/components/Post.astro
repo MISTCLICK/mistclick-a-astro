@@ -45,7 +45,7 @@ const {
   </h1>
   <div class="py-2">
     <img
-      src={Astro.url.origin + "/" + post.frontmatter.imageURL}
+      src={"/" + post.frontmatter.imageURL}
       alt={post.frontmatter.title}
       class={` ${!showImage ? "hidden" : ""} rounded-3xl`}
     />
