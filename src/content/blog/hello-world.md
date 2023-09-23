@@ -3,7 +3,7 @@ title: "Hello World"
 date: "2023-09-22"
 description: "This website is my personal business card and an open diary of sorts :)"
 slug: "hello-world"
-imageURL: "cdn/hello-world.png"
+imageURL: "/cdn/hello-world.png"
 hidden: false
 pinned: false
 ---

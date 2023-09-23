@@ -3,7 +3,7 @@ title: "A little bit about my main interest - VATSIM"
 date: "2023-09-22"
 description: "My favourite and most long-lasting hobby"
 slug: "a-bit-about-vatsim"
-imageURL: "cdn/VATSIM_Logo_Official_1000px.png"
+imageURL: "/cdn/VATSIM_Logo_Official_1000px.png"
 hidden: true
 pinned: true
 ---
