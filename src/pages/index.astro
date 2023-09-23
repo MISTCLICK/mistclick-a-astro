@@ -1,10 +1,43 @@
 ---
+import { getUnixTime } from "date-fns";
+
+import PostPreview from "../components/PostPreview.astro";
 import Base from "../layouts/Base.astro";
 import Main from "../layouts/Main.astro";
+import Post from "../components/Post.astro";
+
+const allPosts = await Astro.glob("../content/blog/*.md");
+const sortedPosts = allPosts.sort(
+  (a, b) =>
+    getUnixTime(new Date(b.frontmatter.date)) -
+    getUnixTime(new Date(a.frontmatter.date))
+);
+const latestPost = sortedPosts.filter((p) => !p.frontmatter.hidden).at(0)!;
+const pinnedPost = sortedPosts.filter((p) => p.frontmatter.pinned).at(0)!;
 ---
 
 <Base title="" description="">
   <Main>
-    <div></div>
+    <div class="px-6 pb-6 pt-2 flex flex-col gap-y-2">
+      <span class="text-3xl">My latest blogpost:</span>
+      <PostPreview post={latestPost} />
+    </div>
+    <div
+      class="w-full h-full px-6 pr-12 pt-4 md:max-[959px]:col-span-2 relative"
+    >
+      <Post
+        post={pinnedPost}
+        showDate={false}
+        linkInTitle={false}
+        returnLink={false}
+        showImage={false}
+      />
+      <a
+        href="#_"
+        class="hover:underline underline-offset-[0.3rem] absolute bottom-0 italic"
+      >
+        ^^ Scroll to the top ^^
+      </a>
+    </div>
   </Main>
 </Base>

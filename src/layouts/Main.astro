@@ -1,12 +1,16 @@
 ---
 import NavBtns from "../components/NavBtns.astro";
 import NavMain from "../components/NavMain.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <>
   <NavMain />
-  <div class="grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-x-2">
+  <main
+    class="my-3 grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-x-2 md:divide-y-0 pb-6 font-inter"
+  >
     <NavBtns mobile />
     <slot />
-  </div>
+  </main>
+  <Footer />
 </>

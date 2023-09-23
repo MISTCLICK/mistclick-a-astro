@@ -11,6 +11,7 @@ import cssSVG from "../assets/css.svg";
 import pythonSVG from "../assets/python.svg";
 import twitterSVG from "../assets/twitter.svg";
 import discordSVG from "../assets/discord.svg";
+import gitHubSVG from "../assets/github.svg";
 
 interface Props {
   mobile?: boolean;
@@ -45,7 +46,7 @@ const { mobile = false } = Astro.props;
   </a>
   <a href="/projects" class="grid content-center justify-center py-4">
     <span
-      class="bg-neutral-800 overflow-hidden text-2xl text-center hidden min-[960px]:flex justify-center items-center gap-x-10"
+      class="bg-neutral-800 overflow-hidden text-2xl text-center hidden min-[960px]:flex justify-center items-center gap-x-5 2xl:gap-x-10"
     >
       <Image
         src={tailwindSVG}
@@ -62,7 +63,7 @@ const { mobile = false } = Astro.props;
       What do I do?
     </span>
     <span
-      class="bg-neutral-800 overflow-hidden text-2xl text-center hidden min-[960px]:flex justify-center items-center gap-x-10"
+      class="bg-neutral-800 overflow-hidden text-2xl text-center hidden min-[960px]:flex justify-center items-center gap-x-5 2xl:gap-x-10"
     >
       <Image src={tsSVG} alt="TypeScript" class="h-6 w-6 skew-x-[10deg]" />
       <Image src={htmlSVG} alt="HTML5" class="h-6 w-6 skew-x-[10deg]" />
@@ -82,6 +83,7 @@ const { mobile = false } = Astro.props;
     </span>
     <span
       class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+      transition:name="blog-heading"
     >
       My blog
     </span>
@@ -93,7 +95,7 @@ const { mobile = false } = Astro.props;
   </a>
   <a href="/contact" class="grid content-center justify-center py-4">
     <span
-      class="bg-amber-500 overflow-hidden text-xl text-center hidden min-[960px]:flex justify-center items-center"
+      class="bg-amber-500 overflow-hidden text-center hidden min-[960px]:flex justify-center items-center"
     >
       <Image src={twitterSVG} alt="X.com" class="h-6 w-6 skew-x-[10deg] mx-3" />
       <Image
@@ -101,7 +103,6 @@ const { mobile = false } = Astro.props;
         alt="Discord"
         class="h-6 w-6 skew-x-[10deg] ml-3 mr-5"
       />
-       and maybe other stuff
     </span>
     <span
       class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
@@ -109,8 +110,12 @@ const { mobile = false } = Astro.props;
       Contact me
     </span>
     <span
-      class="bg-amber-500 overflow-hidden text-xl text-center hidden min-[960px]:flex justify-center items-center gap-x-10"
-      >📧 you can also e-mail me</span
+      class="bg-amber-500 overflow-hidden text-xl text-center hidden min-[960px]:flex justify-center items-center"
+      >📧 <Image
+        src={gitHubSVG}
+        alt="gitHub"
+        class="h-6 w-6 skew-x-[10deg] mx-6"
+      /></span
     >
   </a>
 

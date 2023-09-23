@@ -1,0 +1,60 @@
+---
+import fs from "fs";
+import type { MarkdownInstance } from "astro";
+import { getImage } from "astro:assets";
+import { format, parseISO } from "date-fns";
+
+interface Props {
+  post: MarkdownInstance<Record<string, any>>;
+}
+
+const { post } = Astro.props;
+---
+
+<a
+  href={`/blog/${post.frontmatter.slug}`}
+  class="aspect-video rounded-3xl relative bg-white opacity-100 transition-opacity hover:opacity-70 overflow-hidden"
+  style={`background-image: url(${
+    Astro.url + post.frontmatter.imageURL
+  }); background-size: contain; background-repeat: no-repeat; background-position: center;`}
+  post-preview
+>
+  <div
+    class="absolute left-0 top-0 bg-[#84378f] bg-opacity-70 rounded-br-3xl p-4 origin-top-left flex gap-2 items-center md:flex-col md:items-start"
+    post-details
+  >
+    <span
+      class="font-extrabold text-xl min-[960px]:text-3xl xl:text-5xl text-slate-200"
+      >{post.frontmatter.title}</span
+    >
+    <span class="text-md xl:text-xl text-slate-200"
+      >{format(parseISO(post.frontmatter.date), "dd.MM.yyyy.")}</span
+    >
+  </div>
+  <div
+    class="absolute w-full bottom-0 bg-[#84378f] bg-opacity-70 px-3 py-2 md:p-4 md:translate-y-full transition-transform"
+    post-description-wrapper
+  >
+    <span
+      class="text-sm min-[960px]:text-md xl:text-xl text-slate-200"
+      post-details
+      >{post.frontmatter.description}
+    </span>
+  </div>
+</a>
+
+<style>
+  [post-details] {
+    transition: 0.2s;
+  }
+
+  [post-preview]:hover [post-details] {
+    transform: scale(1.1);
+  }
+
+  @media (min-width: 960px) {
+    [post-preview]:hover [post-description-wrapper] {
+      transform: translateY(0);
+    }
+  }
+</style>
