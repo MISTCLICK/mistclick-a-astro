@@ -12,7 +12,7 @@ pinned: true
 
 The Virtual Air Traffic Simulation Network [(VATSIM)](https://vatsim.net) has been one of my most important sources of inspiration for quite some time now. It is a complicated network of more than 100 000 members that I am a part of. We as members are trying to simulate all aspects of modern civil aviation with utmost precision. I am really happy to be a member of the VATSIM community. I basically have 3 separate lives: a real life, a dev life and a VATSIM life. On this page and in my blog you'll find some details about my life on the network besides my other thoughts and ideas.
 
-## My VATSIM life
+## VATSIM and me
 
 There are 2 ways you can interract with VATSIM: flying as a _Pilot_ or controlling as an _Air Traffic Controller_. I don't fly much these days, I mostly spend my time controlling.
 
