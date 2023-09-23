@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import type { MarkdownInstance } from "astro";
 import { format } from "date-fns";
 import "../styles/md.scss";
@@ -24,11 +23,6 @@ const {
 ---
 
 <article class="relative pb-6">
-  <img
-    src={post.frontmatter.imageURL}
-    alt={post.frontmatter.title}
-    class={`py-8 ${!showImage ? "hidden" : ""}`}
-  />
   <h1
     class={`text-4xl transition-transform origin-left font-extrabold w-fit ${
       linkInTitle ? "hover:scale-[1.1]" : ""
@@ -38,14 +32,25 @@ const {
       href={linkInTitle ? "/blog" : "#"}
       class={!linkInTitle ? "cursor-default" : ""}
     >
-      {post.frontmatter.title}{" "}
+      <span transition:name={`post-title-${post.frontmatter.title}`}>
+        {post.frontmatter.title}{" "}
+      </span>
       <span
         class={`${!showDate ? "hidden" : ""} italic text-2xl font-semibold`}
+        transition:name={`post-title-${post.frontmatter.title}-date`}
       >
-        ({format(new Date(post.frontmatter.date), "dd.MM.yyyy.")})
+        {format(new Date(post.frontmatter.date), "dd.MM.yyyy.")}
       </span>
     </a>
   </h1>
+  <div class="py-2">
+    <img
+      src={Astro.url.origin + "/" + post.frontmatter.imageURL}
+      alt={post.frontmatter.title}
+      class={` ${!showImage ? "hidden" : ""} rounded-3xl`}
+    />
+  </div>
+
   <div
     class={`${
       outsidePostPage
@@ -58,8 +63,8 @@ const {
   <br />
   <a
     href="/blog"
-    class={`hover:underline underline-offset-[0.3rem] text-xl hidden ${
-      returnLink ? "inline" : ""
+    class={`w-20 h-20 hover:underline underline-offset-[0.3rem] text-xl italic ${
+      returnLink ? "inline" : "hidden"
     }`}>{"<-- Return"}</a
   >
 </article>

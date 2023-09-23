@@ -1,0 +1,111 @@
+---
+import { Image } from "astro:assets";
+---
+
+<nav
+  class="w-full h-28 p-5 bg-gradient-to-br from-amber-700 to-violet-700 text-white flex font-inter relative overflow-hidden min-[500px]:justify-between"
+>
+  <div
+    class="flex flex-row gap-x-5 h-fit self-center justify-self-center w-full md:w-fit"
+    transition:name="nav-main"
+  >
+    <a href="/">
+      <Image
+        src="https://avatars.githubusercontent.com/u/56761784"
+        alt="My GitHub avatar"
+        width={1024}
+        height={1024}
+        class="hidden min-[500px]:inline w-12 md:w-20 rounded-full drop-shadow-2xl"
+      />
+    </a>
+
+    <div class="hidden min-[1200px]:flex flex-col md:items-start">
+      <a href="/" class="text-2xl font-black md:font-extrabold mt-3 z-10">
+        @MISTCLICK
+      </a>
+      <div
+        class="relative w-[30ch] md:w-[50ch] flex justify-center text-center md:text-left"
+      >
+        <a
+          href="/blog"
+          class="w-full text-lg font-medium md:font-normal absolute top-0 left-0 animate-slogan-1"
+          >Learn. Innovate. Spread. 📚
+        </a>
+        <a
+          href="https://stats.vatsim.net/stats/1433887"
+          class="w-full text-lg font-medium md:font-normal absolute top-0 left-0 animate-slogan-2"
+          >Aviate. Educate. Communicate. ✈️
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex gap-x-5 -ml-4 md:mr-5 self-center max-[400px]:text-xs max-sm:text-sm sm:text-lg md:text-xl font-semibold underline-offset-[0.3rem]"
+  >
+    <a
+      href="/about"
+      class="hover:underline truncate"
+      transition:name="about-link">Who am I?</a
+    >
+    <a
+      href="/projects"
+      class="hover:underline truncate"
+      transition:name="projects-link">What do I do?</a
+    >
+    <a
+      href="/blog"
+      class="hover:underline truncate"
+      transition:name="blog-link"
+    >
+      My blog</a
+    >
+    <a
+      href="/contact"
+      class="hover:underline truncate"
+      transition:name="contact-link">Contact me</a
+    >
+  </div>
+</nav>
+
+<style>
+  @keyframes slogan {
+    from {
+      transform: translateY(-1.5rem);
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 0;
+    }
+
+    45% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+
+    55% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(1.5rem);
+      opacity: 0;
+    }
+  }
+
+  .animate-slogan-1 {
+    animation: slogan 10s infinite;
+  }
+
+  .animate-slogan-2 {
+    transform: translateY(-1.5rem);
+    opacity: 0;
+    animation: slogan 10s infinite;
+    animation-delay: 5s;
+  }
+</style>

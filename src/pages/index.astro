@@ -16,7 +16,10 @@ const latestPost = sortedPosts.filter((p) => !p.frontmatter.hidden).at(0)!;
 const pinnedPost = sortedPosts.filter((p) => p.frontmatter.pinned).at(0)!;
 ---
 
-<Base title="" description="">
+<Base
+  title="MISTCLICK's den"
+  description="This website is my personal business card and an open diary of sorts :)"
+>
   <Main>
     <div class="px-6 pb-6 pt-2 flex flex-col gap-y-2">
       <span class="text-3xl">My latest blogpost:</span>

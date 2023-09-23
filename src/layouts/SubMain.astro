@@ -1,0 +1,18 @@
+---
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  applyFullHeight?: boolean;
+}
+
+const { applyFullHeight = false } = Astro.props;
+---
+
+<div class={`flex flex-col justify-between ${applyFullHeight ? "h-full" : ""}`}>
+  <Nav />
+  <main class="w-full h-full pb-6 font-inter">
+    <slot />
+  </main>
+  <Footer />
+</div>
