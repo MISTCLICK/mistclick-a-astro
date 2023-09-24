@@ -20,7 +20,7 @@ Unfortunately, I don't have any official educational qualifications as of yet, h
 
 I am fascinated with aviation for many years already. I love spending time studying aircraft systems in-depth and exploring differences in airspace structures around the world. To greater enhance my experience I started simulating flights on my home PC, _gosh, I was 5 back then_. Later I joined the VATSIM network and started to explore the "other side of the radar" and joined Latvia vACC to go through another learning journey. Now I hold a C1 rating and frequently participate in events and other stuff on the network.
 
-VATSIM is a 100% volunteer organisation. All of its 100 000+ members work and spend their time completely for free, because we all have one common goal: **Aviate. Educate. Communicate. ✈️** [To find out more about my experience with VATSIM and the network in general](/blog/a-bit-about-vatsim).
+VATSIM is a 100% volunteer organisation. All of its 100 000+ members work and spend their time completely for free, because we all have one common goal: **Aviate. Educate. Communicate. ✈️** [To find out more about my experience with VATSIM and the network in general click here](/blog/a-bit-about-vatsim).
 
 I am a perfectionist and sometimes that trait of mine becomes unreasonable. That made me an A\* student for my whole life (well, Latvia uses 1-10 grading system, and for many years getting a 10 was my only goal). I am fluent in 3 languages: Latvian, English, and Russian. I am also somewhat experienced with Esperanto.
 
