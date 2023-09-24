@@ -14,7 +14,9 @@ const page = (await Astro.glob("../content/non-blogposts/about.md")).at(0)!;
   <SubMain>
     <div class="grow p-6 flex flex-col items-center">
       <article class="md:max-w-[55%]">
-        <page.Content />
+        <div post-content>
+          <page.Content />
+        </div>
       </article>
     </div>
   </SubMain>

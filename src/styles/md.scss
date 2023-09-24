@@ -14,14 +14,20 @@ article {
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 500;
     line-height: 2rem;
   }
 
-  a:hover {
+  [post-content] a:hover {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
+  }
+
+  [post-content] {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
   }
 
   p {
