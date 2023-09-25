@@ -15,6 +15,7 @@ const { post } = Astro.props;
   href={`/blog/${post.frontmatter.slug}`}
   class="aspect-video rounded-3xl relative bg-white opacity-100 transition-opacity hover:opacity-70 overflow-hidden"
   style={`background-image: url(${post.frontmatter.imageURL}); background-size: contain; background-repeat: no-repeat; background-position: center;`}
+  transition:name={`post-title-${post.frontmatter.title}-image`}
   post-preview
 >
   <div

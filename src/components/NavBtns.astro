@@ -121,91 +121,91 @@ const { mobile = false } = Astro.props;
       /></span
     >
   </a>
-
-  <style>
-    a {
-      position: relative;
-      transition: 0.2s;
-    }
-
-    a span {
-      transition: 0.3s;
-    }
-
-    @media (min-width: 960px) {
-      a:hover span {
-        transform: scale(1.2);
-      }
-    }
-
-    @media (max-width: 959px) {
-      a:focus span {
-        color: #5b21b6;
-      }
-    }
-
-    a:not(:hover) span {
-      transform: scale(1);
-    }
-
-    .bg-animate a span:first-child {
-      position: absolute;
-      align-self: center;
-      left: 10%;
-      width: 0.2rem;
-      height: 0rem;
-      transform: skew(-10deg) translateY(-2.5rem);
-      color: transparent;
-
-      transition:
-        height 0.3s ease-in-out 0s,
-        width 0.7s ease-in-out 0.3s,
-        color 0.1s linear 0.9s;
-    }
-
-    .bg-animate a:hover span:first-child {
-      height: 2rem;
-      width: 80%;
-      color: white;
-    }
-
-    .bg-animate a span:first-child img {
-      opacity: 0;
-      transition: opacity 0.1s linear 0.9s;
-    }
-
-    .bg-animate a:hover span:first-child img {
-      opacity: 1;
-    }
-
-    .bg-animate a span:last-child {
-      position: absolute;
-      align-self: center;
-      right: 10%;
-      width: 0.2rem;
-      height: 0rem;
-      transform: skew(-10deg) translateY(2.5rem);
-      color: transparent;
-
-      transition:
-        height 0.3s ease-in-out 0s,
-        width 0.7s ease-in-out 0.3s,
-        color 0.1s linear 0.9s;
-    }
-
-    .bg-animate a:hover span:last-child {
-      height: 2rem;
-      width: 80%;
-      color: white;
-    }
-
-    .bg-animate a span:last-child img {
-      opacity: 0;
-      transition: opacity 0.1s linear 0.9s;
-    }
-
-    .bg-animate a:hover span:last-child img {
-      opacity: 1;
-    }
-  </style>
 </div>
+
+<style>
+  a {
+    position: relative;
+    transition: 0.2s;
+  }
+
+  a span {
+    transition: 0.3s;
+  }
+
+  @media (min-width: 960px) {
+    a:hover span {
+      transform: scale(1.2);
+    }
+  }
+
+  @media (max-width: 959px) {
+    a:focus span {
+      color: #5b21b6;
+    }
+  }
+
+  a:not(:hover) span {
+    transform: scale(1);
+  }
+
+  .bg-animate a span:first-child {
+    position: absolute;
+    align-self: center;
+    left: 10%;
+    width: 0.2rem;
+    height: 0rem;
+    transform: skew(-10deg) translateY(-2.5rem);
+    color: transparent;
+
+    transition:
+      height 0.3s ease-in-out 0s,
+      width 0.7s ease-in-out 0.3s,
+      color 0.1s linear 0.9s;
+  }
+
+  .bg-animate a:hover span:first-child {
+    height: 2rem;
+    width: 80%;
+    color: white;
+  }
+
+  .bg-animate a span:first-child img {
+    opacity: 0;
+    transition: opacity 0.1s linear 0.9s;
+  }
+
+  .bg-animate a:hover span:first-child img {
+    opacity: 1;
+  }
+
+  .bg-animate a span:last-child {
+    position: absolute;
+    align-self: center;
+    right: 10%;
+    width: 0.2rem;
+    height: 0rem;
+    transform: skew(-10deg) translateY(2.5rem);
+    color: transparent;
+
+    transition:
+      height 0.3s ease-in-out 0s,
+      width 0.7s ease-in-out 0.3s,
+      color 0.1s linear 0.9s;
+  }
+
+  .bg-animate a:hover span:last-child {
+    height: 2rem;
+    width: 80%;
+    color: white;
+  }
+
+  .bg-animate a span:last-child img {
+    opacity: 0;
+    transition: opacity 0.1s linear 0.9s;
+  }
+
+  .bg-animate a:hover span:last-child img {
+    opacity: 1;
+  }
+</style>

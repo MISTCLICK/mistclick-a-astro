@@ -11,7 +11,7 @@ My initials are A.V.; I prefer not to disclose my full name unless there is a re
 Unfortunately, I don't have any official educational qualifications as of yet, however, here are some of my achievements and plans for the future:
 
 - I am graduating an engineering-focused secondary school programme in 2024.
-- I am working on a scientific research paper in computer science. `THE INFLUENCE OF AI HELP ON THE PRODUCTIVITY AND EFFECTIVENESS OF HUMAN PROBLEM SOLVING` (originally in Latvian: _`MĀKSLĪGĀ INTELEKTA PALĪDZĪBAS IETEKME UZ CILVĒKA PROBLĒMRISINĀŠANAS PRODUKTIVITĀTI UN EFEKTIVITĀTI`_). It is due to be completed in 2024.
+- I am working on a scientific research paper in computer science: `THE INFLUENCE OF AI HELP ON THE PRODUCTIVITY AND EFFECTIVENESS OF HUMAN PROBLEM SOLVING` (originally in Latvian: _`MĀKSLĪGĀ INTELEKTA PALĪDZĪBAS IETEKME UZ CILVĒKA PROBLĒMRISINĀŠANAS PRODUKTIVITĀTI UN EFEKTIVITĀTI`_). It is due to be completed in 2024.
 - I am really into physics and I have multiple city and state-level awards for physics olympiads and competitions.
 - My preferred programming languages are TypeScript and Python. I started out working on Discord bots with discord.js and discord.py, but now I am mostly focused on web development. I do also have limited game dev experience with Unity/C#. At the moment, Next.js is my go-to full-stack tool. I prefer SQL databases, but I've also got experience with MongoDB and Redis (as cache and as DB). I also have experience working on electron apps, to be honest had a lot of fun with that and would love to touch electron again.
 - Next year I am hoping to get into SDU - University of Southern Denmark, BEng (Bachelor of Engineering) in Mechatronics.

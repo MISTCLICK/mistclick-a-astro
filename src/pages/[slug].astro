@@ -1,10 +1,22 @@
 ---
+import type { GetStaticPaths } from "astro";
 import Base from "../layouts/Base.astro";
 import SubMain from "../layouts/SubMain.astro";
 
 import "../styles/md.scss";
 
-const page = (await Astro.glob("../content/non-blogposts/about.md")).at(0)!;
+export const getStaticPaths = (async () => {
+  const allPages = await Astro.glob("../content/non-blogposts/*.md");
+
+  return allPages.map((p) => {
+    return {
+      params: { slug: p.file.split("/").at(-1)!.replaceAll(".md", "") },
+      props: { page: p },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
 ---
 
 <Base
