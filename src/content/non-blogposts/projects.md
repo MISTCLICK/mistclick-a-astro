@@ -1,3 +1,8 @@
+---
+title: "My projects"
+description: "Here you can find all of the recent projects that I've participated in as as developer."
+---
+
 # Projects that I've taken part in
 
 _(Updated September 2023)_

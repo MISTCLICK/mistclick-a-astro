@@ -20,8 +20,8 @@ const { page } = Astro.props;
 ---
 
 <Base
-  title="About me | MISTCLICK's den"
-  description="Here you can find a short personal statement of mine. Think of it what you like. :)"
+  title={`${page.frontmatter.title} | MISTCLICK's den`}
+  description={page.frontmatter.description}
 >
   <SubMain>
     <div class="grow p-6 flex flex-col items-center">

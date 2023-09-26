@@ -28,6 +28,7 @@ const { post } = Astro.props;
 <Base
   title={`${post.frontmatter.title} | MISTCLICK's blog`}
   description={`${post.frontmatter.description} | MISTCLICK's blog`}
+  imageURL={post.frontmatter.imageURL}
 >
   <SubMain>
     <div class="grow p-6 self-center md:max-w-[55%]">

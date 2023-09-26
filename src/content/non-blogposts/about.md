@@ -1,3 +1,8 @@
+---
+title: "About me"
+description: "Here you can find a short personal statement of mine. Think of it what you like. :)"
+---
+
 # About me
 
 _(Updated September 2023)_

@@ -1,3 +1,8 @@
+---
+title: "Contact me"
+description: "If you're interested in contacting me, you may find all the relevant information here."
+---
+
 # Reach out to me!
 
 _(All links valid as of 2023.)_

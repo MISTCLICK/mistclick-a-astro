@@ -4,9 +4,10 @@ import { ViewTransitions } from "astro:transitions";
 interface Props {
   title: string;
   description: string;
+  imageURL?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, imageURL } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,7 +18,14 @@ const { title, description } = Astro.props;
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content={imageURL ?? null} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="og:image" content={imageURL ?? null} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={Astro.url.pathname} />
     <title>{title}</title>
   </head>
 
