@@ -17,13 +17,13 @@ const { title, description, imageURL } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:image" content={imageURL ?? null} />
+    <meta property="twitter:image" content={imageURL ?? "/icon.png"} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="og:image" content={imageURL ?? null} />
+    <meta property="og:image" content={imageURL ?? "/icon.png"} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta name="theme-color" content="#6D28D9" />

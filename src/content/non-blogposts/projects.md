@@ -50,7 +50,7 @@ This was my opportunity to learn Astro and enhance my knowledge of CSS even furt
 
 Well, obviously. I really wanted to actually ship something with Astro, so I started working on this website. I used my previous experience and I hope to extend my knowledge of SEO with this project. I hope to find some other purpose for this project other than what it already is. My short-term goals right now look something like this:
 
-- Improve and figure out SEO in general
+- Improve and figure out SEO in general beyond what's already done (robots.txt, a sitemap and page previews for social media)
 - Implement pagination at [/blog](/blog) once I made more than 10 posts
 - Maybe add a newsletter?
 - Figure out some kind of client-side functionality. Do I even need it? If so, what could I offer to the user?
