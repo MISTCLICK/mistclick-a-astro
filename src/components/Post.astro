@@ -28,20 +28,33 @@ const {
       linkInTitle ? "hover:scale-[1.1]" : ""
     }`}
   >
-    <a
-      href={linkInTitle ? "/blog" : ""}
-      class={!linkInTitle ? "cursor-default" : ""}
-    >
-      <span transition:name={`post-title-${post.frontmatter.title}`}>
-        {post.frontmatter.title}{" "}
-      </span>
-      <span
-        class={`${!showDate ? "hidden" : ""} italic text-2xl font-semibold`}
-        transition:name={`post-title-${post.frontmatter.title}-date`}
-      >
-        {format(new Date(post.frontmatter.date), "dd.MM.yyyy.")}
-      </span>
-    </a>
+    {
+      linkInTitle ? (
+        <a href="/blog">
+          <span transition:name={`post-title-${post.frontmatter.title}`}>
+            {post.frontmatter.title}{" "}
+          </span>
+          <span
+            class={`${!showDate ? "hidden" : ""} italic text-2xl font-semibold`}
+            transition:name={`post-title-${post.frontmatter.title}-date`}
+          >
+            {format(new Date(post.frontmatter.date), "dd.MM.yyyy.")}
+          </span>
+        </a>
+      ) : (
+        <div>
+          <span transition:name={`post-title-${post.frontmatter.title}`}>
+            {post.frontmatter.title}{" "}
+          </span>
+          <span
+            class={`${!showDate ? "hidden" : ""} italic text-2xl font-semibold`}
+            transition:name={`post-title-${post.frontmatter.title}-date`}
+          >
+            {format(new Date(post.frontmatter.date), "dd.MM.yyyy.")}
+          </span>
+        </div>
+      )
+    }
   </h1>
   <div class="py-2">
     <img
