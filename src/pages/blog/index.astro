@@ -10,7 +10,7 @@ const displayedPosts = allPosts
   .sort(
     (a, b) =>
       getUnixTime(new Date(b.frontmatter.date)) -
-      getUnixTime(new Date(a.frontmatter.date))
+      getUnixTime(new Date(a.frontmatter.date)),
   )
   .filter((p) => !p.frontmatter.hidden);
 ---

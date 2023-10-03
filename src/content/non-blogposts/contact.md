@@ -15,9 +15,7 @@ _(All links valid as of 2023.)_
 
 ## Message me directly
 
-_Unavailable for now, please visit this page later. Thanks for your understanding._
-
-<!-- - For any business inquiries please send an e-mail to: [<span class="text-blue-600">business@mistclick.me</span>](mailto:business@mistclick.me) -->
-<!-- - Send any other questions to: [<span class="text-blue-600">ari@mistclick.me</span>](mailto:ari@mistclick.me) -->
+- For any business/professional inquiries please send an e-mail to: [<span class="text-blue-600">business@mistclick.me</span>](mailto:business@mistclick.me)
+- Send anything else to: [<span class="text-blue-600">ari@mistclick.me</span>](mailto:ari@mistclick.me)
 
 ![the more you know gif](/cdn/the-more-you-know.gif)

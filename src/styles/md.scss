@@ -48,6 +48,10 @@ article {
     font-size: 1.125rem;
   }
 
+  ul.contains-task-list {
+    list-style-type: none;
+  }
+
   ol {
     padding-left: 1rem;
     list-style-position: inside;

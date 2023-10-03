@@ -10,7 +10,7 @@ export const getStaticPaths = (async () => {
   const allPosts = (await Astro.glob("../../content/blog/*.md")).sort(
     (a, b) =>
       getUnixTime(new Date(b.frontmatter.date)) -
-      getUnixTime(new Date(a.frontmatter.date))
+      getUnixTime(new Date(a.frontmatter.date)),
   );
 
   return allPosts.map((post) => {

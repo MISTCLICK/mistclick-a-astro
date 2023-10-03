@@ -23,44 +23,36 @@ const {
 ---
 
 <article class="relative pb-6">
-  <h1
-    class={`text-4xl transition-transform origin-left font-extrabold w-fit ${
+  <div
+    class={`text-4xl transition-transform origin-left font-extrabold w-full ${
       linkInTitle ? "hover:scale-[1.1]" : ""
     }`}
   >
     {
       linkInTitle ? (
         <a href="/blog">
-          <span transition:name={`post-title-${post.frontmatter.title}`}>
-            {post.frontmatter.title}{" "}
-          </span>
-          <span
-            class={`${!showDate ? "hidden" : ""} italic text-2xl font-semibold`}
-            transition:name={`post-title-${post.frontmatter.title}-date`}
-          >
+          <h1>{post.frontmatter.title}</h1>
+          <p class={`${!showDate ? "hidden" : ""} text-2xl font-semibold`}>
             {format(new Date(post.frontmatter.date), "dd.MM.yyyy.")}
-          </span>
+          </p>
         </a>
       ) : (
         <div>
-          <span transition:name={`post-title-${post.frontmatter.title}`}>
-            {post.frontmatter.title}{" "}
-          </span>
-          <span
-            class={`${!showDate ? "hidden" : ""} italic text-2xl font-semibold`}
-            transition:name={`post-title-${post.frontmatter.title}-date`}
-          >
+          <h1>{post.frontmatter.title} </h1>
+          <p class={`${!showDate ? "hidden" : ""} text-2xl font-semibold`}>
             {format(new Date(post.frontmatter.date), "dd.MM.yyyy.")}
-          </span>
+          </p>
         </div>
       )
     }
-  </h1>
+  </div>
   <div class="py-2">
     <img
       src={post.frontmatter.imageURL}
       alt={post.frontmatter.title}
-      class={` ${!showImage ? "hidden" : ""} rounded-3xl select-none mb-2`}
+      class={` ${
+        !showImage || post.frontmatter.hideImageOnBlogPage ? "hidden" : ""
+      } rounded-3xl select-none mb-2`}
       transition:name={`post-title-${post.frontmatter.title}-image`}
     />
   </div>

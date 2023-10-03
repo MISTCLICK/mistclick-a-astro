@@ -10,7 +10,7 @@ const allPosts = await Astro.glob("../content/blog/*.md");
 const sortedPosts = allPosts.sort(
   (a, b) =>
     getUnixTime(new Date(b.frontmatter.date)) -
-    getUnixTime(new Date(a.frontmatter.date))
+    getUnixTime(new Date(a.frontmatter.date)),
 );
 const latestPost = sortedPosts.filter((p) => !p.frontmatter.hidden).at(0)!;
 const pinnedPost = sortedPosts.filter((p) => p.frontmatter.pinned).at(0)!;
