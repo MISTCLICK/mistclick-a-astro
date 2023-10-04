@@ -10,7 +10,7 @@ const displayedPosts = allPosts
   .sort(
     (a, b) =>
       getUnixTime(new Date(b.frontmatter.date)) -
-      getUnixTime(new Date(a.frontmatter.date)),
+      getUnixTime(new Date(a.frontmatter.date))
   )
   .filter((p) => !p.frontmatter.hidden);
 ---
@@ -23,7 +23,7 @@ const displayedPosts = allPosts
     <div class="w-full h-full p-6 grow">
       <h1 class="text-4xl font-bold">My latest posts and weird takes</h1>
       <div
-        class="w-full h-full grid grid-cols-1 min-[650px]:grid-cols-2 pt-6 gap-12"
+        class="w-full h-full grid grid-cols-1 min-[650px]:grid-cols-2 py-6 gap-x-12"
       >
         {displayedPosts.map((p) => <PostPreview post={p} />)}
       </div>

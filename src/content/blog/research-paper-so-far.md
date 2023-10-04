@@ -46,7 +46,7 @@ type User = {
 };
 ```
 
-We wrote the theory analysis for this paper quite quickly, it only took us 2 months (April-May 2023). As this app wasn't really complicated, the development and testing process lasted about a month. After all the summer travelling and other stuff, we finished all of it in August, and by 27.08.2023 everything was completed.
+We wrote the theory analysis for this paper quite quickly, it only took us 2 months (April-May 2023). As this app wasn't really complicated, the development and testing process lasted about a month. After all the summer travelling and other stuff, we finished all of it in August, and by 27.08.2023 everything was completed. The most time-consuming part was training the AI model to solve the puzzles presented to it. We decided to use mazes as logical puzzles, because they are fairly easy to generate. The AI model that we trained was able to easily solve mazes as large as 200x200 cells.
 
 We started to conduct our experiment on the 11.09.2023 [(accessible at <span class="text-blue-600">lostrabbit.lv</span>)](https://lostrabbit.lv) and plan to continue surveying students, teachers and experts until we have a reasonable data set to work with. At the moment (03.10.2023) 271 unique participants have taken part in our experiment. We hope to reach at least 500 people in total, though, in an ideal world a 1000 would be better.
 

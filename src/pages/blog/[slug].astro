@@ -10,7 +10,7 @@ export const getStaticPaths = (async () => {
   const allPosts = (await Astro.glob("../../content/blog/*.md")).sort(
     (a, b) =>
       getUnixTime(new Date(b.frontmatter.date)) -
-      getUnixTime(new Date(a.frontmatter.date)),
+      getUnixTime(new Date(a.frontmatter.date))
   );
 
   return allPosts.map((post) => {
@@ -31,7 +31,7 @@ const { post } = Astro.props;
   imageURL={post.frontmatter.imageURL}
 >
   <SubMain>
-    <div class="grow p-6 self-center md:max-w-[55%]">
+    <div class="grow p-6 self-center w-full md:max-w-[55%]">
       <Post post={post} />
     </div>
   </SubMain>
