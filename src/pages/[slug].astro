@@ -24,12 +24,12 @@ const { page } = Astro.props;
   description={page.frontmatter.description}
 >
   <SubMain>
-    <div class="flex grow flex-col items-center p-6">
-      <article class="md:max-w-[55%]">
+    <main class="self-center p-6">
+      <article>
         <div post-content>
           <page.Content />
         </div>
       </article>
-    </div>
+    </main>
   </SubMain>
 </Base>
