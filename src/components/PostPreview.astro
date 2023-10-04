@@ -13,34 +13,34 @@ const { post } = Astro.props;
 
 <a
   href={`/blog/${post.frontmatter.slug}`}
-  class="aspect-video rounded-3xl relative bg-white opacity-100 transition-opacity hover:opacity-70 overflow-hidden"
+  class="relative aspect-video overflow-hidden rounded-3xl bg-white opacity-100 transition-opacity hover:opacity-70"
   style={`background-image: url(${post.frontmatter.imageURL}); background-size: contain; background-repeat: no-repeat; background-position: center;`}
   transition:name={`post-title-${post.frontmatter.title}-image`}
   post-preview
 >
   <div
-    class="absolute left-0 top-0 bg-[#84378f] bg-opacity-70 rounded-br-3xl p-4 origin-top-left flex gap-2 items-center md:flex-col md:items-start max-w-[85%]"
+    class="absolute left-0 top-0 flex max-w-[85%] origin-top-left items-center gap-2 rounded-br-3xl bg-[#84378f] bg-opacity-70 p-4 md:flex-col md:items-start"
     post-details
   >
     <span
-      class="font-extrabold text-xl min-[960px]:text-3xl xl:text-5xl text-white"
+      class="text-xl font-extrabold text-white min-[960px]:text-3xl xl:text-5xl"
       transition:name={`post-title-${post.frontmatter.title}`}
     >
       {post.frontmatter.title}
     </span>
     <span
-      class="text-md xl:text-xl text-white"
+      class="text-md text-white xl:text-xl"
       transition:name={`post-title-${post.frontmatter.title}-date`}
     >
       {format(parseISO(post.frontmatter.date), "dd.MM.yyyy.")}
     </span>
   </div>
   <div
-    class="hidden min-[400px]:block absolute w-full bottom-0 bg-[#84378f] bg-opacity-70 px-3 py-2 md:p-4 min-[650px]:translate-y-full transition-transform"
+    class="absolute bottom-0 hidden w-full bg-[#84378f] bg-opacity-70 px-3 py-2 transition-transform min-[400px]:block min-[650px]:translate-y-full md:p-4"
     post-description-wrapper
   >
     <span
-      class="text-sm min-[960px]:text-md xl:text-xl text-white max-h-8"
+      class="min-[960px]:text-md max-h-8 text-sm text-white xl:text-xl"
       post-details
       >{post.frontmatter.description}
     </span>

@@ -11,7 +11,7 @@ const { title, description, imageURL } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth overflow-x-hidden" id="_">
+<html lang="en" class="overflow-x-hidden scroll-smooth" id="_">
   <head>
     <ViewTransitions />
     <meta charset="UTF-8" />
@@ -42,7 +42,7 @@ const { title, description, imageURL } = Astro.props;
     }
   </style>
 
-  <body class="w-screen h-[100dvh]">
+  <body class="h-[100dvh] w-screen">
     <slot />
   </body>
 </html>

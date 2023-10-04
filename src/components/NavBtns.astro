@@ -29,25 +29,25 @@ const { mobile = false } = Astro.props;
 >
   <a href="/about" class="grid content-center justify-center py-4">
     <span
-      class="bg-violet-400 overflow-hidden text-2xl text-center hidden min-[960px]:inline"
+      class="hidden overflow-hidden bg-violet-400 text-center text-2xl min-[960px]:inline"
     >
       🥰🤪😴🤬💫🤌🫶🐸🍜🍙🍱🍶🚄🛫
     </span>
     <span
-      class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+      class="text-lg font-bold underline-offset-2 drop-shadow-md max-[959px]:underline lg:text-2xl 2xl:text-3xl"
       transition:name="about-link"
     >
       Who am I?
     </span>
     <span
-      class="bg-violet-400 overflow-hidden text-2xl text-center hidden min-[960px]:inline"
+      class="hidden overflow-hidden bg-violet-400 text-center text-2xl min-[960px]:inline"
     >
       ✈️🧳🥇🎮🔮♠️ ♥️ ♦️ ♣️🎴📸🖥📚🔭
     </span>
   </a>
   <a href="/projects" class="grid content-center justify-center py-4">
     <span
-      class="bg-neutral-800 overflow-hidden text-2xl text-center hidden min-[960px]:flex justify-center items-center gap-x-5 2xl:gap-x-10"
+      class="hidden items-center justify-center gap-x-5 overflow-hidden bg-neutral-800 text-center text-2xl min-[960px]:flex 2xl:gap-x-10"
     >
       <Image
         src={tailwindSVG}
@@ -59,13 +59,13 @@ const { mobile = false } = Astro.props;
       <Image src={astroSVG} alt="Astro" class="h-6 w-6 skew-x-[10deg]" />
     </span>
     <span
-      class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+      class="text-lg font-bold underline-offset-2 drop-shadow-md max-[959px]:underline lg:text-2xl 2xl:text-3xl"
       transition:name="projects-link"
     >
       What do I do?
     </span>
     <span
-      class="bg-neutral-800 overflow-hidden text-2xl text-center hidden min-[960px]:flex justify-center items-center gap-x-5 2xl:gap-x-10"
+      class="hidden items-center justify-center gap-x-5 overflow-hidden bg-neutral-800 text-center text-2xl min-[960px]:flex 2xl:gap-x-10"
     >
       <Image src={tsSVG} alt="TypeScript" class="h-6 w-6 skew-x-[10deg]" />
       <Image src={htmlSVG} alt="HTML5" class="h-6 w-6 skew-x-[10deg]" />
@@ -73,51 +73,51 @@ const { mobile = false } = Astro.props;
       <Image
         src={pythonSVG}
         alt="Python"
-        class="w-6 skew-x-[10deg] translate-y-0.5"
+        class="w-6 translate-y-0.5 skew-x-[10deg]"
       />
     </span>
   </a>
   <a href="/blog" class="grid content-center justify-center py-4">
     <span
-      class="bg-rose-400 overflow-hidden text-2xl text-center hidden min-[960px]:inline"
+      class="hidden overflow-hidden bg-rose-400 text-center text-2xl min-[960px]:inline"
     >
       🤬 hot takes 🔥
     </span>
     <span
-      class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+      class="text-lg font-bold underline-offset-2 drop-shadow-md max-[959px]:underline lg:text-2xl 2xl:text-3xl"
       transition:name="blog-link"
     >
       My blog
     </span>
     <span
-      class="bg-rose-400 overflow-hidden text-2xl text-center hidden min-[960px]:inline"
+      class="hidden overflow-hidden bg-rose-400 text-center text-2xl min-[960px]:inline"
     >
       💭 thoughts 🤔
     </span>
   </a>
   <a href="/contact" class="grid content-center justify-center py-4">
     <span
-      class="bg-amber-500 overflow-hidden text-center hidden min-[960px]:flex justify-center items-center"
+      class="hidden items-center justify-center overflow-hidden bg-amber-500 text-center min-[960px]:flex"
     >
-      <Image src={twitterSVG} alt="X.com" class="h-6 w-6 skew-x-[10deg] mx-3" />
+      <Image src={twitterSVG} alt="X.com" class="mx-3 h-6 w-6 skew-x-[10deg]" />
       <Image
         src={discordSVG}
         alt="Discord"
-        class="h-6 w-6 skew-x-[10deg] ml-3 mr-5"
+        class="ml-3 mr-5 h-6 w-6 skew-x-[10deg]"
       />
     </span>
     <span
-      class="text-lg lg:text-2xl 2xl:text-3xl font-bold max-[959px]:underline underline-offset-2 drop-shadow-md"
+      class="text-lg font-bold underline-offset-2 drop-shadow-md max-[959px]:underline lg:text-2xl 2xl:text-3xl"
       transition:name="contact-link"
     >
       Contact me
     </span>
     <span
-      class="bg-amber-500 overflow-hidden text-xl text-center hidden min-[960px]:flex justify-center items-center"
+      class="hidden items-center justify-center overflow-hidden bg-amber-500 text-center text-xl min-[960px]:flex"
       >📧 <Image
         src={gitHubSVG}
         alt="gitHub"
-        class="h-6 w-6 skew-x-[10deg] mx-6"
+        class="mx-6 h-6 w-6 skew-x-[10deg]"
       /></span
     >
   </a>

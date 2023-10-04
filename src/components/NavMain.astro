@@ -4,11 +4,11 @@ import NavBtns from "./NavBtns.astro";
 ---
 
 <nav
-  class="w-full h-[70%] bg-gradient-to-br from-amber-700 to-violet-700 text-white flex flex-col font-inter relative"
+  class="font-inter relative flex h-[70%] w-full flex-col bg-gradient-to-br from-amber-700 to-violet-700 text-white"
 >
-  <div class="w-full h-full flex">
+  <div class="flex h-full w-full">
     <div
-      class="md:pl-20 flex flex-col items-center md:flex-row gap-x-10 gap-y-5 h-fit self-center justify-self-center w-full md:w-fit"
+      class="flex h-fit w-full flex-col items-center gap-x-10 gap-y-5 self-center justify-self-center md:w-fit md:flex-row md:pl-20"
       transition:name="nav-main"
     >
       <Image
@@ -16,26 +16,26 @@ import NavBtns from "./NavBtns.astro";
         alt="My GitHub avatar"
         width={1024}
         height={1024}
-        class="w-36 md:w-48 rounded-full drop-shadow-2xl select-none"
+        class="w-36 select-none rounded-full drop-shadow-2xl md:w-48"
       />
       <div
-        class="flex flex-col justify-center items-center md:items-start gap-y-4"
+        class="flex flex-col items-center justify-center gap-y-4 md:items-start"
       >
-        <span class="text-xl md:text-5xl font-black md:font-extrabold z-10">
+        <span class="z-10 text-xl font-black md:text-5xl md:font-extrabold">
           @MISTCLICK
         </span>
         <div
-          class="relative w-[30ch] md:w-[50ch] flex justify-center text-center md:text-left"
+          class="relative flex w-[30ch] justify-center text-center md:w-[50ch] md:text-left"
         >
           <a
             href="/blog"
-            class="w-full text-lg md:text-2xl font-medium md:font-normal absolute top-0 left-0 animate-slogan-1"
+            class="animate-slogan-1 absolute left-0 top-0 w-full text-lg font-medium md:text-2xl md:font-normal"
           >
             Learn. Innovate. Spread. 📚
           </a>
           <a
             href="https://stats.vatsim.net/stats/1433887"
-            class="w-full text-lg md:text-2xl font-medium md:font-normal absolute top-0 left-0 animate-slogan-2"
+            class="animate-slogan-2 absolute left-0 top-0 w-full text-lg font-medium md:text-2xl md:font-normal"
           >
             Aviate. Educate. Communicate. ✈️
           </a>
@@ -44,11 +44,11 @@ import NavBtns from "./NavBtns.astro";
     </div>
     <NavBtns />
   </div>
-  <div class="absolute bottom-0 w-full flex justify-evenly overflow-hidden">
+  <div class="absolute bottom-0 flex w-full justify-evenly overflow-hidden">
     {
       new Array(50).fill(0).map(() => (
-        <div class="md:hover:-translate-y-20 transition-transform float-left h-24 px-6 relative dot-wrap">
-          <span class="absolute bottom-2 border-4 border-white rounded-full dot" />
+        <div class="dot-wrap relative float-left h-24 px-6 transition-transform md:hover:-translate-y-20">
+          <span class="dot absolute bottom-2 rounded-full border-4 border-white" />
         </div>
       ))
     }

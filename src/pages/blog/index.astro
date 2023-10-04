@@ -10,7 +10,7 @@ const displayedPosts = allPosts
   .sort(
     (a, b) =>
       getUnixTime(new Date(b.frontmatter.date)) -
-      getUnixTime(new Date(a.frontmatter.date))
+      getUnixTime(new Date(a.frontmatter.date)),
   )
   .filter((p) => !p.frontmatter.hidden);
 ---
@@ -20,10 +20,10 @@ const displayedPosts = allPosts
   description="Here you can find all my blogposts, hot takes and thoughts. :)"
 >
   <SubMain>
-    <div class="w-full h-full p-6 grow">
+    <div class="h-full w-full grow p-6">
       <h1 class="text-4xl font-bold">My latest posts and weird takes</h1>
       <div
-        class="w-full h-full grid grid-cols-1 min-[650px]:grid-cols-2 py-6 gap-x-12"
+        class="grid h-full w-full grid-cols-1 gap-x-12 py-6 min-[650px]:grid-cols-2"
       >
         {displayedPosts.map((p) => <PostPreview post={p} />)}
       </div>

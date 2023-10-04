@@ -21,12 +21,12 @@ const pinnedPost = sortedPosts.filter((p) => p.frontmatter.pinned).at(0)!;
   description="This website is my personal business card and an open diary of sorts :)"
 >
   <Main>
-    <div class="px-6 pb-6 pt-2 flex flex-col gap-y-2">
+    <div class="flex flex-col gap-y-2 px-6 pb-6 pt-2">
       <span class="text-3xl">My latest blogpost:</span>
       <PostPreview post={latestPost} />
     </div>
     <div
-      class="w-full h-full px-6 pr-12 pt-4 md:max-[959px]:col-span-2 relative"
+      class="relative h-full w-full px-6 pr-12 pt-4 md:max-[959px]:col-span-2"
     >
       <Post
         post={pinnedPost}
@@ -37,7 +37,7 @@ const pinnedPost = sortedPosts.filter((p) => p.frontmatter.pinned).at(0)!;
       />
       <a
         href="#_"
-        class="hover:underline underline-offset-[0.3rem] absolute bottom-0 italic"
+        class="absolute bottom-0 italic underline-offset-[0.3rem] hover:underline"
       >
         ^^ Scroll to the top ^^
       </a>
