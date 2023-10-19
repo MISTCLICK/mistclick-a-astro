@@ -21,26 +21,30 @@ const pinnedPost = sortedPosts.filter((p) => p.frontmatter.pinned).at(0)!;
   description="This website is my personal business card and an open diary of sorts :)"
 >
   <Main>
-    <div class="flex flex-col gap-y-2 px-6 pb-6 pt-2">
-      <span class="text-3xl">My latest blogpost:</span>
-      <PostPreview post={latestPost} />
-    </div>
-    <div
-      class="relative h-full w-full px-6 pr-12 pt-4 md:max-[959px]:col-span-2"
+    <section
+      class="grid max-w-[2000px] grid-cols-1 divide-y-2 md:grid-cols-2 md:divide-x-2 md:divide-y-0"
     >
-      <Post
-        post={pinnedPost}
-        showDate={false}
-        linkInTitle={false}
-        returnLink={false}
-        showImage={false}
-      />
-      <a
-        href="#_"
-        class="absolute bottom-0 italic underline-offset-[0.3rem] hover:underline"
+      <div class="flex flex-col gap-y-2 px-6 pb-6 pt-2">
+        <span class="text-3xl">My latest blogpost:</span>
+        <PostPreview post={latestPost} />
+      </div>
+      <div
+        class="relative h-full w-full px-6 pr-12 pt-4 md:max-[959px]:col-span-2"
       >
-        ^^ Scroll to the top ^^
-      </a>
-    </div>
+        <Post
+          post={pinnedPost}
+          showDate={false}
+          linkInTitle={false}
+          returnLink={false}
+          showImage={false}
+        />
+        <a
+          href="#_"
+          class="absolute bottom-0 italic underline-offset-[0.3rem] hover:underline"
+        >
+          ^^ Scroll to the top ^^
+        </a>
+      </div>
+    </section>
   </Main>
 </Base>

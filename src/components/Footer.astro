@@ -3,42 +3,47 @@ const startYear = 2023;
 ---
 
 <footer
-  class="font-inter flex w-screen flex-col justify-around gap-20 bg-neutral-800 p-5 text-white md:flex-row"
+  class="font-inter flex w-screen justify-center bg-neutral-800 p-5 text-white"
 >
-  <div class="flex flex-col gap-2">
-    <span class="border-b">Links</span>
-    <a class="foot-link" href="https://github.com/MISTCLICK">My GitHub</a>
-    <a class="foot-link" href="https://github.com/MISTCLICK/mistclick-a-astro">
-      This web page's GitHub repository
-    </a>
-    <a class="foot-link" href="/blog">Blog</a>
-    <a class="foot-link" href="/about">About me</a>
-    <a class="foot-link" href="https://vatsim.net">VATSIM</a>
-  </div>
-  <div class="flex flex-col gap-2 md:max-w-[33%]">
-    <span class="border-b">Legal</span>
-    <span>
-      I am in no way affiliated with any of the technologies and companies
-      mentioned on this page. Any logos, branding etc. belong to their
-      respective copyright holders. Social media logos only represent links to
-      my accounts in the respective social media. Technology logos such as
-      Next.js, GitHub, etc. exclusively represent my use of respective
-      technologies.
-    </span>
-    <span>
-      Any and all code, text, and media on this web page and it's repository is
-      open-source and is distributed under the MIT licence.
-    </span>
-  </div>
-  <div class="flex flex-col gap-2">
-    <span
-      >© MISTCLICK {
-        new Date().getFullYear() === startYear
-          ? startYear
-          : `${startYear}.-${new Date().getFullYear()}`
-      }.</span
-    >
-    <span>Designed and built with ❤️</span>
+  <div class="flex max-w-[2000px] flex-col justify-between gap-20 md:flex-row">
+    <div class="flex flex-col gap-2">
+      <span class="border-b">Links</span>
+      <a class="foot-link" href="https://github.com/MISTCLICK">My GitHub</a>
+      <a
+        class="foot-link"
+        href="https://github.com/MISTCLICK/mistclick-a-astro"
+      >
+        This web page's GitHub repository
+      </a>
+      <a class="foot-link" href="/blog">Blog</a>
+      <a class="foot-link" href="/about">About me</a>
+      <a class="foot-link" href="https://vatsim.net">VATSIM</a>
+    </div>
+    <div class="flex flex-col gap-2 md:max-w-[33%]">
+      <span class="border-b">Legal</span>
+      <span>
+        I am in no way affiliated with any of the technologies and companies
+        mentioned on this page. Any logos, branding etc. belong to their
+        respective copyright holders. Social media logos only represent links to
+        my accounts in the respective social media. Technology logos such as
+        Next.js, GitHub, etc. exclusively represent my use of respective
+        technologies.
+      </span>
+      <span>
+        Any and all code, text, and media on this web page and it's repository
+        is open-source and is distributed under the MIT licence.
+      </span>
+    </div>
+    <div class="flex flex-col gap-2">
+      <span
+        >© MISTCLICK {
+          new Date().getFullYear() === startYear
+            ? startYear
+            : `${startYear}.-${new Date().getFullYear()}`
+        }.</span
+      >
+      <span>Designed and built with ❤️</span>
+    </div>
   </div>
 </footer>
 

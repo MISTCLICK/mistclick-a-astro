@@ -1,9 +1,9 @@
 ---
-title: "AI Research is weird"
-date: "2023-10-03"
+title: AI Research is weird
+date: 2023-10-03
 description: "About a year ago me and my friend found a way to put more academic achievements on our file: writing a research paper. It's due in 2024, what have we done so far?"
-slug: "ai-research-is-weird"
-imageURL: "/cdn/diffusion-of-innovations.png"
+slug: ai-research-is-weird
+imageURL: /cdn/diffusion-of-innovations.png
 hidden: false
 pinned: false
 hideImageOnBlogPage: true
