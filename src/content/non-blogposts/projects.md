@@ -5,7 +5,7 @@ description: "Here you can find all of the recent projects that I've participate
 
 # Projects that I've taken part in
 
-_(Updated September 2023)_
+_(Updated February 2024)_
 
 Ever since I started my learning journey as a developer I've participated in multiple projects with different technologies and varying degrees of complexity.
 
