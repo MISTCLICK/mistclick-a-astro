@@ -5,7 +5,7 @@ description: "My favourite and most long-lasting hobby"
 slug: "a-bit-about-vatsim"
 imageURL: "/cdn/VATSIM_Logo_Official_1000px.png"
 hidden: true
-pinned: true
+pinned: false
 ---
 
 ## What's VATSIM?

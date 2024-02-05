@@ -29,18 +29,18 @@ _Note: I am also really ashamed of committing transpiled .js files to the reposi
 
 ## My research paper [private repository for legal reasons]; website hosted at [<span class="text-blue-600">lostrabbit.lv</span>](https://lostrabbit.lv)
 
-I am working on a scientific research paper in computer science: `THE INFLUENCE OF AI HELP ON THE PRODUCTIVITY AND EFFECTIVENESS OF HUMAN PROBLEM SOLVING` (originally in Latvian: _`MĀKSLĪGĀ INTELEKTA PALĪDZĪBAS IETEKME UZ CILVĒKA PROBLĒMRISINĀŠANAS PRODUKTIVITĀTI UN EFEKTIVITĀTI`_). I am working in a team with a friend of mine; and this project was a great learning opportunity for both of us. The goals of the research include, but are not limited to:
+As of 01.02.2024. I have defended a research paper in computer science: `THE INFLUENCE OF AI HELP ON THE PRODUCTIVITY AND EFFECTIVENESS OF PROBLEM SOLVING` (originally in Latvian: _`MĀKSLĪGĀ INTELEKTA PALĪDZĪBAS IETEKME UZ PROBLĒMRISINĀŠANAS PRODUKTIVITĀTI UN EFEKTIVITĀTI`_). I worked in a team with a friend of mine; and this project was a great learning opportunity for both of us. The goals of the research include, but are not limited to:
 
 - Find out, to which category of the _Diffusion of innovations_ theory young people belong as of 2023.-2024. by surveying the respective group of people.
 - Determine the viability of using AI models on a daily basis in an office workspace for the current and future working generations.
 
-This project is based around a game consisting of 20 mazes. Pretty much the whole web interface is written with Next.js and TypeScript, but, obviously, the AI model required us to explore TensorFlow Sequential models. We have been working on this project since the start of 2022. and are due to publish the paper in 2024. This project forced me to explore CSS more in depth than ever before and also was my first experience with Tailwind CSS. It was really important to ensure easy to navigate interface and linear user experience for all participants of our experiment. For anyone who's interested, the project architecture looks like this:
+This project is based around a game consisting of 20 mazes. Pretty much the whole web interface is written with Next.js and TypeScript, but, obviously, the AI model required us to explore TensorFlow Sequential models. We have been working on this project since the start of 2022. This project forced me to explore CSS more in depth than ever before and also was my first experience with Tailwind CSS. It was really important to ensure easy to navigate interface and linear user experience for all participants of our experiment. For anyone who's interested, the project architecture looks like this:
 
 - Next.js as frontend and backend
 - Redis with persistence as DB for experiment results (yeah, we didn't need much other than a key-value store here)
 - TensorFlow for the AI model
 
-A full list of sources and other literature will be published here after the research paper is finished.
+Additional details about this project will be published here in due course.
 
 ## A template for my school's website [private repository for legal reasons]
 

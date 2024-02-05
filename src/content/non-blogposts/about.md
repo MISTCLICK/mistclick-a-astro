@@ -5,7 +5,7 @@ description: "Here you can find a short personal statement of mine. Think of it 
 
 # About me
 
-_(Updated September 2023)_
+_(Updated February 2024)_
 
 ## A little background
 
@@ -16,10 +16,10 @@ My initials are A.V.; I prefer not to disclose my full name unless there is a re
 Unfortunately, I don't have any official educational qualifications as of yet, however, here are some of my achievements and plans for the future:
 
 - I am graduating an engineering-focused secondary school programme in 2024.
-- I am working on a scientific research paper in computer science: `THE INFLUENCE OF AI HELP ON THE PRODUCTIVITY AND EFFECTIVENESS OF HUMAN PROBLEM SOLVING` (originally in Latvian: _`MĀKSLĪGĀ INTELEKTA PALĪDZĪBAS IETEKME UZ CILVĒKA PROBLĒMRISINĀŠANAS PRODUKTIVITĀTI UN EFEKTIVITĀTI`_). It is due to be completed in 2024.
+- As of 01.02.2024. I have defended a research paper in computer science: `THE INFLUENCE OF AI HELP ON THE PRODUCTIVITY AND EFFECTIVENESS OF PROBLEM SOLVING` (originally in Latvian: _`MĀKSLĪGĀ INTELEKTA PALĪDZĪBAS IETEKME UZ PROBLĒMRISINĀŠANAS PRODUKTIVITĀTI UN EFEKTIVITĀTI`_).
 - I am really into physics and I have multiple city and state-level awards for physics olympiads and competitions.
 - My preferred programming languages are TypeScript and Python. I started out working on Discord bots with discord.js and discord.py, but now I am mostly focused on web development. I do also have limited game dev experience with Unity/C#. At the moment, Next.js is my go-to full-stack tool. I prefer SQL databases, but I've also got experience with MongoDB and Redis (as cache and as DB). I also have experience working on electron apps, to be honest had a lot of fun with that and would love to touch electron again.
-- Next year I am hoping to get into SDU - University of Southern Denmark, BEng (Bachelor of Engineering) in Mechatronics.
+- This year I am hoping to get into SDU - University of Southern Denmark, BEng (Bachelor of Engineering) or BSc (Bachelor of Science) in Mechatronics.
 
 ## My interests and some facts about me
 
@@ -27,7 +27,7 @@ I am fascinated with aviation for many years already. I love spending time study
 
 VATSIM is a 100% volunteer organisation. All of its 100 000+ members work and spend their time completely for free, because we all have one common goal: **Aviate. Educate. Communicate. ✈️** [To find out more about my experience with VATSIM and the network in general click here](/blog/a-bit-about-vatsim).
 
-I am a perfectionist and sometimes that trait of mine becomes unreasonable. That made me an A\* student for my whole life (well, Latvia uses 1-10 grading system, and for many years getting a 10 was my only goal). I am fluent in 3 languages: Latvian, English, and Russian. I am also somewhat experienced with Esperanto.
+I am a perfectionist and sometimes that trait of mine becomes unreasonable. That made me an A\* student for my whole life (well, Latvia uses 1-10 grading system, and for many years getting a 10 was my only goal). I am fluent in 3 languages: Latvian, English, and Russian. I am also somewhat experienced with Esperanto and German.
 
 ## My free time and taste
 
@@ -54,6 +54,8 @@ I will also list some of my musical preferences here, because why not:
 - Imagine Dragons
 - girl in red
 - Billie Eilish
+- Tessa Violet
+- Nothing But Thieves
 
 Oh yeah. I also love coffee and I am very meticulous about it. I am a picky eater and can consume anything at the same time somehow.
 

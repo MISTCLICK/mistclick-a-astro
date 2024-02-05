@@ -5,7 +5,7 @@ description: "If you're interested in contacting me, you may find all the releva
 
 # Reach out to me!
 
-_(All links valid as of 2023.)_
+_(All links valid as of 2024.)_
 
 ## My social media links and handles
 
