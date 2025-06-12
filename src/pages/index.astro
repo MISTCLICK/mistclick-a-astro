@@ -1,50 +1,15 @@
 ---
-import { getUnixTime } from "date-fns";
 
-import PostPreview from "../components/PostPreview.astro";
-import Base from "../layouts/Base.astro";
-import Main from "../layouts/Main.astro";
-import Post from "../components/Post.astro";
-
-const allPosts = await Astro.glob("../content/blog/*.md");
-const sortedPosts = allPosts.sort(
-  (a, b) =>
-    getUnixTime(new Date(b.frontmatter.date)) -
-    getUnixTime(new Date(a.frontmatter.date)),
-);
-const latestPost = sortedPosts.filter((p) => !p.frontmatter.hidden).at(0)!;
-const pinnedPost = sortedPosts.filter((p) => p.frontmatter.pinned).at(0)!;
 ---
 
-<Base
-  title="MISTCLICK's den"
-  description="This website is my personal business card and an open diary of sorts :)"
->
-  <Main>
-    <section
-      class="grid max-w-[2000px] grid-cols-1 divide-y-2 md:grid-cols-2 md:divide-x-2 md:divide-y-0"
-    >
-      <div class="flex flex-col gap-y-2 px-6 pb-6 pt-2">
-        <span class="text-3xl">My latest blogpost:</span>
-        <PostPreview post={latestPost} />
-      </div>
-      <div
-        class="relative h-full w-full px-6 pr-12 pt-4 md:max-[959px]:col-span-2"
-      >
-        <Post
-          post={pinnedPost}
-          showDate={false}
-          linkInTitle={false}
-          returnLink={false}
-          showImage={false}
-        />
-        <a
-          href="#_"
-          class="absolute bottom-0 italic underline-offset-[0.3rem] hover:underline"
-        >
-          ^^ Scroll to the top ^^
-        </a>
-      </div>
-    </section>
-  </Main>
-</Base>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Arina Vasiļjeva</title>
+  </head>
+  <body>
+    <h1>My name is Arina and I wear many faces...</h1>
+  </body>
+</html>
