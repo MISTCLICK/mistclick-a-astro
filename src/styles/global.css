@@ -4,6 +4,8 @@
 
 @theme {
   --color-primary: #212121;
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 150rem;
 }
 
 /* Global Classes */
@@ -11,49 +13,4 @@
 * {
   min-height: 0;
   font-family: "Geist", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* font-weight: 300; */
-}
-
-@keyframes nimbus {
-  0% {
-    transform: translateX(0) translateY(25%);
-  }
-
-  25% {
-    transform: translateX(-5%) translateY(0%);
-  }
-
-  50% {
-    transform: translateX(0) translateY(-25%);
-  }
-
-  75% {
-    transform: translateX(5%) translateY(0%);
-  }
-
-  100% {
-    transform: translateX(0) translateY(25%);
-  }
-}
-
-#hero {
-  background: radial-gradient(closest-side, #2121213f, transparent);
-}
-
-#node {
-  @apply cursor-pointer px-8 py-3 flex flex-col justify-end items-center gap-y-6;
-}
-
-#node-label {
-  background: radial-gradient(closest-side, #212121ee, #212121de, #212121c5);
-
-  @apply size-12 rounded-full group-hover/node:after:animate-ping relative after:content-[''] after:-z-10 after:absolute group-hover/node:after:size-12 after:bg-primary after:rounded-full flex justify-center items-center;
-}
-
-#node-description {
-  @apply w-max group-hover/node:opacity-100 opacity-0 transition-opacity;
-}
-
-.animate-nimbus {
-  animation: nimbus 20s ease-in-out infinite alternate;
 }

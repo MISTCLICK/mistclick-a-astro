@@ -1,11 +1,5 @@
 ---
-import {
-  SparklesIcon,
-  PocketKnifeIcon,
-  BinaryIcon,
-  RadarIcon,
-  BookOpenIcon,
-} from "@lucide/astro";
+import NodeCluster from "../components/react/NodeCluster";
 
 import "../styles/global.css";
 ---
@@ -23,74 +17,7 @@ import "../styles/global.css";
         My name is <span class="font-semibold tracking-wide">Arina</span> and I wear
         many faces...
       </h1>
-      <div
-        id="node-supercontainer"
-        class="h-128 flex flex-col justify-end gap-y-6"
-      >
-        <p
-          class="text-center group-hover/hero:opacity-100 opacity-0 transition-opacity text-xl tracking-wide"
-        >
-          I am a...
-        </p>
-
-        <div id="node-container" class="flex justify-around items-end">
-          <!-- Creative Thinker -->
-          <section
-            id="node"
-            class="group/node animate-nimbus mb-6"
-            style="animation-delay: -500ms;"
-          >
-            <div id="node-label">
-              <SparklesIcon color="#fff" />
-            </div>
-            <span id="node-description">Creative Thinker</span>
-          </section>
-          <!-- Mechatronics Engineering Student -->
-          <section
-            id="node"
-            class="group/node animate-nimbus mb-0"
-            style="animation-delay: -1500ms;"
-          >
-            <div id="node-label">
-              <PocketKnifeIcon color="#fff" />
-            </div>
-            <span id="node-description">Mechatronics Engineering Student</span>
-          </section>
-          <!-- Full-Stack Software Engineer -->
-          <section
-            id="node"
-            class="group/node animate-nimbus mb-8"
-            style="animation-delay: -7500ms;"
-          >
-            <div id="node-label">
-              <BinaryIcon color="#fff" />
-            </div>
-            <span id="node-description">Full-Stack Software Engineer</span>
-          </section>
-          <!-- Aviation Educator -->
-          <section
-            id="node"
-            class="group/node animate-nimbus mb-12"
-            style="animation-delay: -2500ms;"
-          >
-            <div id="node-label">
-              <RadarIcon color="#fff" />
-            </div>
-            <span id="node-description">Aviation Educator</span>
-          </section>
-          <!-- 5 -->
-          <section
-            id="node"
-            class="group/node animate-nimbus mb-5"
-            style="animation-delay: -5000ms;"
-          >
-            <div id="node-label">
-              <BookOpenIcon color="#fff" />
-            </div>
-            <span id="node-description">Teacher & Tutor</span>
-          </section>
-        </div>
-      </div>
+      <NodeCluster client:load />
     </div>
   </body>
 </html>
