@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@keyframes nimbus {
+  0% {
+    transform: translateX(0) translateY(25%);
+  }
+
+  25% {
+    transform: translateX(-5%) translateY(0%);
+  }
+
+  50% {
+    transform: translateX(0) translateY(-25%);
+  }
+
+  75% {
+    transform: translateX(5%) translateY(0%);
+  }
+
+  100% {
+    transform: translateX(0) translateY(25%);
+  }
+}
+
+@keyframes article-expand {
+  from {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  to {
+    width: 90dvw;
+    height: 30rem;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+#hero {
+  background: radial-gradient(closest-side, #2121213f, transparent);
+}
+
+#node {
+  @apply cursor-pointer px-8 py-3 flex flex-col justify-end items-center gap-y-6;
+}
+
+#node-label {
+  background: radial-gradient(closest-side, #212121ee, #212121de, #212121c5);
+
+  @apply size-12 rounded-full group-data-[selected=false]/node:group-hover/node:after:animate-ping relative after:content-[''] after:-z-10 after:absolute group-data-[selected=false]/node:group-hover/node:after:size-12 after:bg-[var(--color-primary)] after:rounded-full flex justify-center items-center;
+}
+
+#node-description {
+  @apply w-max group-data-[selected=false]/node:group-hover/node:opacity-100 opacity-0 transition-opacity;
+}
+
+.animate-nimbus {
+  animation: nimbus 20s ease-in-out infinite alternate;
+}
+
+.animate-article-expand {
+  animation: article-expand 500ms ease-in-out forwards !important;
+}
+
+.animate-fade-in {
+  animation: fade-in 300ms ease-in-out 500ms forwards !important;
+}
