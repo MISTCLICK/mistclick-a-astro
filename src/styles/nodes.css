@@ -58,10 +58,6 @@
   background: radial-gradient(closest-side, #2121213f, transparent);
 }
 
-#node {
-  @apply cursor-pointer px-8 py-3 flex flex-col justify-end items-center gap-y-6;
-}
-
 #node-label {
   background: radial-gradient(closest-side, #212121ee, #212121de, #212121c5);
 
