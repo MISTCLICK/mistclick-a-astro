@@ -1,16 +1,102 @@
-import type { SparklesIcon } from "lucide-react";
+import { MailIcon, GithubIcon, type SparklesIcon } from "lucide-react";
 import type { ComponentProps } from "react";
 
 import { cn, useSectionContext } from "../../util";
 
-const Aviation: React.FC = () => (
-  <div className="flex justify-between w-full pr-10">
+const About: React.FC = () => (
+  <div className="flex max-2_5xl:flex-col justify-between w-full pr-10 gap-10 pb-5 2_5xl:text-lg">
     <div className="max-w-200 space-y-2">
       <p>
-        For many years at this point I have been a part of a Virtual Air Traffic
-        Simulation Network - VATSIM which lets around 200 000 people around the
-        world partake in simulating realistic aeronautical procedures as either
-        pilots or air traffic controllers.
+        I come from Latvia - a small country in eastern Europe and all my life I
+        have lived by the idea that perspective is key. From a young age I was
+        the so-called gifted child: excellence at school, various contests,
+        olympiads, extracurriculars, all those things were about me. The
+        difference that makes me stand out is that I managed to avoid burnout in
+        a way that might surprise some and terrify others.
+      </p>
+      <p>
+        I was quick to pick up that doing everything everywhere and all at once
+        was an endeavour for Hermione Granger with a time turner, but not for
+        me. As a result, I learnt to plan, delegate, and multitask; I learnt to
+        look at any task or problem from a different perspective which allowed
+        me to succeed both academically and in my personal interests. Over the
+        years I have formed a few core principles: do no harm, gain the most
+        progress by applying the least effort, and do as much benefit to others
+        as possible by your limited effort.
+      </p>
+      <p>
+        And now here I am: a mechatronics engineering student with a passion for
+        high-quality and accessible software that became a tutor at 16 and a
+        secondary school teacher at just 18. I have been a national champion in
+        physics olympiads for many years and got numerous awards, including a
+        personal note of gratitude from the Prime Minister of Latvia for my
+        academic achievements. In my spare time I help to run and maintain a
+        community of aviation enthusiasts and work as a volunteer educator for
+        that same organisation.
+      </p>
+      <p>
+        I advance my skills and keep myself informed; I expand my scope of
+        knowledge by observing and teaching; I do not suffer from insanity, I
+        enjoy every minute of it.
+      </p>
+    </div>
+    <div className="2_5xl:self-center space-y-4 [&>*>a]:space-x-3 [&>*>a>*]:align-middle [&>*>a]:hover:opacity-80 [&>*>a]:transition-opacity">
+      <p>Wish to connect with me or see what I do?</p>
+      <div>
+        <a
+          href="mailto:ari@mistclick.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MailIcon className="inline" />
+          <span>ari@mistclick.me</span>
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://github.com/MISTCLICK"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            className="inline size-6"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#fff"
+          >
+            <title></title>
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/ari-v/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/cdn/InBug-White.png" alt="" className="inline size-6" />
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </div>
+);
+
+const Engineer: React.FC = () => <></>;
+
+const Developer: React.FC = () => <></>;
+
+const Aviation: React.FC = () => (
+  <div className="flex max-2_5xl:flex-col justify-between w-full pr-10 gap-10 pb-5 2_5xl:text-lg">
+    <div className="max-w-200 space-y-2">
+      <p>
+        For many years I have been a part of a Virtual Air Traffic Simulation
+        Network - VATSIM which lets around 200 000 people around the world
+        partake in simulating realistic aeronautical procedures as either pilots
+        or air traffic controllers.
       </p>
       <p>
         Since 2021 I have been working in various staff positions as a volunteer
@@ -29,13 +115,22 @@ const Aviation: React.FC = () => (
         and various public and internal bots/service workers.
       </p>
     </div>
-    <div className="self-center space-y-8 [&>*>a]:space-x-5">
+    <div className="2_5xl:self-center space-y-8 [&>*>a]:space-x-5 [&>*>a>*]:align-middle [&>*>a]:hover:opacity-80 [&>*>a]:transition-opacity">
+      <div>
+        <a href="https://vatsim.net" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/cdn/VATSIM_Logo_Official_1000px.png"
+            alt="VATSIM logo"
+            className="2_5xl:w-45 w-35 bg-white px-3 py-2 rounded-md"
+          />
+        </a>
+      </div>
       <div>
         <a href="https://lv-vacc.org" target="_blank" rel="noopener noreferrer">
           <img
             src="/cdn/lv_white.png"
             alt="Latvia vACC logo, white background"
-            className="size-10 inline"
+            className="2_5xl:size-10 size-6 inline"
           />
           <span>lv-vacc.org</span>
         </a>
@@ -49,7 +144,7 @@ const Aviation: React.FC = () => (
           <img
             src="/cdn/lv_flag.ico"
             alt="Latvia vACC OneTest logo, the Latvian flag emoji"
-            className="size-10 inline"
+            className="2_5xl:size-10 size-6 inline"
           />
           <span>training.lv-vacc.org</span>
         </a>
@@ -63,7 +158,7 @@ const Aviation: React.FC = () => (
           <img
             src="/cdn/lv_red.png"
             alt="Latvia vACC logo, carmine background"
-            className="size-10 inline"
+            className="2_5xl:size-10 size-6 inline"
           />
           <span>kb.lv-vacc.org</span>
         </a>
@@ -71,6 +166,8 @@ const Aviation: React.FC = () => (
     </div>
   </div>
 );
+
+const Teacher: React.FC = () => <></>;
 
 const insetList = [
   "inset-x-[-45%_0]",
@@ -80,8 +177,14 @@ const insetList = [
   "inset-x-[45%_0]",
 ];
 
-const avatarList = ["", "", "", "atc.jpg", ""];
-const contentList = [null, null, null, <Aviation />, null];
+const avatarList = ["about.jpg", "", "", "atc.jpg", ""];
+const contentList = [
+  <About />,
+  <Engineer />,
+  <Developer />,
+  <Aviation />,
+  <Teacher />,
+];
 
 type NodeProps = {
   id: number;
@@ -102,11 +205,11 @@ const Node: React.FC<NodeProps> = ({
     <section
       id="node"
       className={cn(
-        "group/node mb-6 transition-all duration-300 max-w-[1920px] cursor-pointer",
+        "group/node mb-6 duration-300 transition-[height_width] max-w-[1920px] cursor-pointer",
         insetList[id],
         id !== selectedNode
           ? "animate-nimbus px-8 py-3"
-          : "mx-auto bg-linear-to-br absolute from-primary to-primary/60 overflow-hidden animate-article-expand rounded-tl-3xl! rounded-md p-0 flex flex-col gap-y-5",
+          : "mx-auto bg-linear-to-br absolute from-primary to-primary/60 animate-article-expand rounded-tl-3xl! rounded-md p-0 flex flex-col gap-y-5 z-10 min-h-120!",
         id === selectedNode
           ? id >= 3
             ? "bg-linear-to-bl rounded-tr-3xl! rounded-tl-md!"
@@ -138,7 +241,7 @@ const Node: React.FC<NodeProps> = ({
         <h2
           id="node-description"
           className={cn(
-            "group-data-[selected=true]/node:text-white group-data-[selected=true]/node:text-2xl group-data-[selected=true]/node:mt-3 group-data-[selected=true]/node:mx-4 group-data-[selected=true]/node:tracking-wider group-data-[selected=true]/node:font-medium",
+            "group-data-[selected=true]/node:text-white group-data-[selected=true]/node:text-xl lg:group-data-[selected=true]/node:text-2xl group-data-[selected=true]/node:mt-3 group-data-[selected=true]/node:mx-4 group-data-[selected=true]/node:tracking-wider group-data-[selected=true]/node:font-medium",
             id === selectedNode ? "animate-fade-in" : ""
           )}
         >
@@ -147,7 +250,7 @@ const Node: React.FC<NodeProps> = ({
       </div>
       <article
         className={cn(
-          "w-full grow group-data-[selected=false]/node opacity-0 text-white *:first:self-start flex justify-between px-8 text-start gap-x-10 text-lg",
+          "w-full grow group-data-[selected=false]/node opacity-0 text-white *:first:self-start flex max-lg:flex-col-reverse lg:justify-between px-4 md:px-8 text-start gap-10",
           id === selectedNode ? "animate-fade-in" : "hidden"
         )}
       >
@@ -155,7 +258,7 @@ const Node: React.FC<NodeProps> = ({
         <img
           src={`./cdn/${avatarList[id]}`}
           alt="A photo of Arina"
-          className="rounded-full max-h-80 self-center"
+          className="rounded-full max-h-60 lg:max-h-80 self-center bg-black"
         />
       </article>
     </section>

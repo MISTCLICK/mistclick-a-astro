@@ -4,6 +4,7 @@
 
 @theme {
   --color-primary: #212121;
+  --breakpoint-2_5xl: 105rem;
   --breakpoint-3xl: 120rem;
   --breakpoint-4xl: 150rem;
 }
