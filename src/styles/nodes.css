@@ -32,13 +32,14 @@
   }
 
   50% {
+    height: 30rem;
     inset-inline: initial 0;
     translate: 0% -25rem;
   }
 
   to {
     width: 90dvw;
-    height: 30rem;
+    height: fit-content;
 
     inset-inline: 0;
     translate: 0% -25rem;

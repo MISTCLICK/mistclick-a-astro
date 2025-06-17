@@ -46,7 +46,7 @@ const NodeCluster: React.FC = () => {
             <Node
               id={0}
               Icon={SparklesIcon}
-              description="Creative Thinker"
+              description="Creative Problem-Solver"
               animationDelay={500}
             />
           </button>
