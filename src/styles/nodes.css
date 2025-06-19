@@ -25,21 +25,21 @@
 @keyframes article-expand {
   from {
     width: 3rem;
-    height: 3rem;
+    height: auto;
 
     inset-inline: initial 0;
     translate: 0% 0%;
   }
 
   50% {
-    height: 30rem;
     inset-inline: initial 0;
     translate: 0% -25rem;
   }
 
   to {
     width: 90dvw;
-    height: fit-content;
+    height: calc-size(auto);
+    height: auto;
 
     inset-inline: 0;
     translate: 0% -25rem;

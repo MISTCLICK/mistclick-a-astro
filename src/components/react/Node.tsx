@@ -1,11 +1,11 @@
-import { MailIcon, type SparklesIcon } from "lucide-react";
+import { FileUserIcon, MailIcon, type SparklesIcon } from "lucide-react";
 import type { ComponentProps } from "react";
 
 import { cn, useSectionContext } from "../../util";
 
 const About: React.FC = () => (
   <div className="flex max-2_5xl:flex-col justify-between w-full pr-10 gap-10 pb-5 2_5xl:text-lg">
-    <div className="max-w-200 space-y-2">
+    <div className="max-w-200 space-y-4">
       <p>
         I come from Latvia - a small country in eastern Europe and all my life I
         have lived by the idea that perspective is key. From a young age I was
@@ -87,7 +87,7 @@ const About: React.FC = () => (
 
 const Engineer: React.FC = () => (
   <div className="flex max-2_5xl:flex-col justify-between w-full pr-10 gap-10 pb-5 2_5xl:text-lg">
-    <div className="max-w-200 space-y-2">
+    <div className="max-w-200 space-y-4">
       <p>
         In 2024 I was admitted to the <em>BSc in Engineering (Mechatronics)</em>{" "}
         programme at the <em>University of Southern Denmark (SDU)</em>. In my
@@ -141,11 +141,98 @@ const Engineer: React.FC = () => (
   </div>
 );
 
-const Developer: React.FC = () => <></>;
+const Developer: React.FC = () => (
+  <div className="flex max-2_5xl:flex-col justify-between w-full pr-10 gap-10 pb-5 2_5xl:text-lg">
+    <div className="max-w-200 space-y-4">
+      <p>
+        My journey in the world of software development began back in 2020
+        stemming from a wish to help my community. Back then I began learning by
+        building a Discord bot for a small group of aviation enthusiasts I was a
+        part of. This quickly escalated to working on other bots, as well as
+        primitive websites and <em>Node.js</em> applications. At the beginning I
+        already had a good enough understanding of boolean algebra and state
+        machines and thus the somewhat counterintuitive nature of some
+        programming techniques did not hinder my learning progress.
+      </p>
+      <p>
+        Since I am an aviation educator my further experience, naturally, was
+        mostly as part of my effort to improve the learning experience of those
+        actively participating in the communities I was a part of at the time. I
+        developed learning management systems, Wiki-like platforms, and other
+        applications relevant for the cause. I worked day and night learning{" "}
+        <em>Node.js, React, Next.js, Vue, Svelte</em> for web applications, as
+        well as <em>Electron, Python, C/C++</em>, and <em>Unity</em> for desktop
+        applications. I also worked with many databases, like{" "}
+        <em>PostgreSQL, MySQL, SQLite, MongoDB, Redis</em>, and <em>GraphDB</em>{" "}
+        ensuring the best experience for users in every application I worked on.
+        I learned the ins and outs of building agile, accessible, and
+        user-friendly applications all on my own and deployed every single
+        application I worked on so far myself too.
+      </p>
+      <p>
+        I began my professional work as a Full-Stack Software Engineer in
+        November 2024 after being hired for a part-time position. In my line of
+        work I continued developing educational projects with strong community
+        impact co-funded by the European Union. To this day I am continuously
+        contributing to both paid and volunteering projects and am never
+        stepping off my path of lifelong learning. I take pride in the work that
+        I do and would love to talk about it more!
+      </p>
+    </div>
+    <div className="2_5xl:self-center space-y-4 [&>*>a]:space-x-5 [&>*>a>*]:align-middle [&>*>a]:hover:opacity-80 [&>*>a]:transition-opacity [&>div]:text-blue-50">
+      <p>Wish to connect with me or see what I do in more detail?</p>
+      <div>
+        <a
+          href="mailto:ari@mistclick.me"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MailIcon className="inline" />
+          <span>ari@mistclick.me</span>
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://github.com/MISTCLICK"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            className="inline size-6"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#fff"
+          >
+            <title></title>
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/ari-v/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/cdn/InBug-White.png" alt="" className="inline size-6" />
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <div>
+        <a href="/cdn/CV_Arina.pdf" target="_blank" rel="noopener noreferrer">
+          <FileUserIcon className="inline" />
+          <span>See my CV</span>
+        </a>
+      </div>
+    </div>
+  </div>
+);
 
 const Aviation: React.FC = () => (
   <div className="flex max-2_5xl:flex-col justify-between w-full pr-10 gap-10 pb-5 2_5xl:text-lg">
-    <div className="max-w-200 space-y-2">
+    <div className="max-w-200 space-y-4">
       <p>
         For many years I have been a part of a Virtual Air Traffic Simulation
         Network - VATSIM which lets around 200 000 people around the world
@@ -231,7 +318,7 @@ const insetList = [
   "inset-x-[45%_0]",
 ];
 
-const avatarList = ["about.jpg", "engineer.jpg", "", "atc.jpg", ""];
+const avatarList = ["about.jpg", "engineer.jpg", "dev.png", "atc.jpg", ""];
 const contentList = [
   <About />,
   <Engineer />,
@@ -263,7 +350,7 @@ const Node: React.FC<NodeProps> = ({
         insetList[id],
         id !== selectedNode
           ? "animate-nimbus px-8 py-3"
-          : "mx-auto bg-linear-to-br absolute from-primary to-primary/60 animate-article-expand rounded-tl-3xl! rounded-md p-0 flex flex-col gap-y-5 z-10 min-h-120!",
+          : "mx-auto bg-linear-to-br absolute from-primary to-primary/60 flex animate-article-expand rounded-tl-3xl! rounded-md p-0 flex-col gap-y-5 z-10 min-h-120",
         id === selectedNode
           ? id >= 3
             ? "bg-linear-to-bl rounded-tr-3xl! rounded-tl-md!"
@@ -311,7 +398,11 @@ const Node: React.FC<NodeProps> = ({
         {contentList[id]}
         <img
           src={`./cdn/${avatarList[id]}`}
-          alt="A photo of Arina"
+          alt={
+            id !== 2
+              ? "A photo of Arina"
+              : "Some of the code used for this page :)"
+          }
           className="rounded-full max-h-60 lg:max-h-80 self-center bg-black"
         />
       </article>
