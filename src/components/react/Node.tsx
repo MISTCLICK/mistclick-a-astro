@@ -1,4 +1,4 @@
-import { MailIcon, GithubIcon, type SparklesIcon } from "lucide-react";
+import { MailIcon, type SparklesIcon } from "lucide-react";
 import type { ComponentProps } from "react";
 
 import { cn, useSectionContext } from "../../util";
@@ -85,7 +85,61 @@ const About: React.FC = () => (
   </div>
 );
 
-const Engineer: React.FC = () => <></>;
+const Engineer: React.FC = () => (
+  <div className="flex max-2_5xl:flex-col justify-between w-full pr-10 gap-10 pb-5 2_5xl:text-lg">
+    <div className="max-w-200 space-y-2">
+      <p>
+        In 2024 I was admitted to the <em>BSc in Engineering (Mechatronics)</em>{" "}
+        programme at the <em>University of Southern Denmark (SDU)</em>. In my
+        studies I am continuing to follow the path of academic excellence and am
+        especially focusing on maths and embedded systems.
+      </p>
+      <p>
+        My choice to study mechatronics engineering might seem counterintuitive
+        given my expertise as a software engineer, however, a large part of the
+        field I am studying is to do with development of embedded systems and
+        programming of microcontrollers. I strongly believe that expansion of my
+        knowledge across different paradigms of software engineering will help
+        me become a true expert in building and analysing software at all levels
+        of user interaction and complexity.
+      </p>
+      <p>
+        In project work - part of my studies at SDU, I especially focus on
+        developing the electronics and software parts. Among projects of note
+        completed by me are a railcar and a motor test stand.
+      </p>
+      <p>
+        To further broaden my skills in November of 2024 I joined{" "}
+        <em>The Als Rocketry Club</em> - a student organisation at SDU. My role
+        in the club is that of a Systems Administrator. I maintain the club's
+        website, inventory tracking system, and am developing applications for
+        rocket tracking and control.
+      </p>
+    </div>
+    <div className="2_5xl:self-center space-y-8 [&>*>a]:space-x-5 [&>*>a>*]:align-middle [&>*>a]:hover:opacity-80 [&>*>a]:transition-opacity">
+      <div>
+        <a href="https://sdu.dk" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/cdn/SDU.png"
+            alt="SDU logo"
+            className="2_5xl:h-9 h-6 inline"
+          />
+          <span>sdu.dk</span>
+        </a>
+      </div>
+      <div>
+        <a href="https://the-arc.dk" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/cdn/arc.png"
+            alt="Als Rocketry Club logo"
+            className="2_5xl:h-9 h-6 inline"
+          />
+          <span>the-arc.dk</span>
+        </a>
+      </div>
+    </div>
+  </div>
+);
 
 const Developer: React.FC = () => <></>;
 
@@ -177,7 +231,7 @@ const insetList = [
   "inset-x-[45%_0]",
 ];
 
-const avatarList = ["about.jpg", "", "", "atc.jpg", ""];
+const avatarList = ["about.jpg", "engineer.jpg", "", "atc.jpg", ""];
 const contentList = [
   <About />,
   <Engineer />,
