@@ -22,36 +22,15 @@
   }
 }
 
-@keyframes article-expand {
+@keyframes article-show {
   from {
-    width: 3rem;
-    height: auto;
-
-    inset-inline: initial 0;
-    translate: 0% 0%;
-  }
-
-  50% {
-    inset-inline: initial 0;
-    translate: 0% -25rem;
+    opacity: 0;
+    scale: 95%;
   }
 
   to {
-    width: 90dvw;
-    height: calc-size(auto);
-    height: auto;
-
-    inset-inline: 0;
-    translate: 0% -25rem;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
+    scale: 100%;
+    opacity: 1;
   }
 }
 
@@ -73,10 +52,6 @@
   animation: nimbus 20s ease-in-out infinite alternate;
 }
 
-.animate-article-expand {
-  animation: article-expand 500ms ease-in-out forwards !important;
-}
-
-.animate-fade-in {
-  animation: fade-in 300ms ease-in-out 500ms forwards !important;
+.animate-article-show {
+  animation: article-show 300ms ease-in-out forwards !important;
 }
