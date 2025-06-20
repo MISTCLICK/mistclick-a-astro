@@ -223,7 +223,7 @@ const Developer: React.FC = () => (
       <div>
         <a href="/cdn/CV_Arina.pdf" target="_blank" rel="noopener noreferrer">
           <FileUserIcon className="inline" />
-          <span>See my CV</span>
+          <span>Take a look at my CV</span>
         </a>
       </div>
     </div>
@@ -346,11 +346,11 @@ const Node: React.FC<NodeProps> = ({
     <section
       id="node"
       className={cn(
-        "group/node mb-6 duration-300 transition-[height_width] max-w-[1920px] cursor-pointer",
+        "group/node mb-6 max-w-[1920px] cursor-pointer",
         insetList[id],
         id !== selectedNode
           ? "animate-nimbus px-8 py-3"
-          : "mx-auto bg-linear-to-br absolute from-primary to-primary/60 flex animate-article-expand rounded-tl-3xl! rounded-md p-0 flex-col gap-y-5 z-10 min-h-120",
+          : "bg-linear-to-br absolute mx-auto inset-x-0 from-primary top-1/2 md:top-1/2 -translate-y-1/4 md:-translate-y-1/2 to-primary/60 flex animate-article-show rounded-tl-3xl! rounded-md p-0 w-[90dvw] flex-col h-fit gap-y-5 z-10",
         id === selectedNode
           ? id >= 3
             ? "bg-linear-to-bl rounded-tr-3xl! rounded-tl-md!"
@@ -383,7 +383,7 @@ const Node: React.FC<NodeProps> = ({
           id="node-description"
           className={cn(
             "group-data-[selected=true]/node:text-white group-data-[selected=true]/node:text-xl lg:group-data-[selected=true]/node:text-2xl group-data-[selected=true]/node:mt-3 group-data-[selected=true]/node:mx-4 group-data-[selected=true]/node:tracking-wider group-data-[selected=true]/node:font-medium",
-            id === selectedNode ? "animate-fade-in" : ""
+            id === selectedNode ? "opacity-100!" : ""
           )}
         >
           {description}
@@ -391,8 +391,8 @@ const Node: React.FC<NodeProps> = ({
       </div>
       <article
         className={cn(
-          "w-full grow group-data-[selected=false]/node opacity-0 text-white *:first:self-start flex max-lg:flex-col-reverse lg:justify-between px-4 md:px-8 text-start gap-10",
-          id === selectedNode ? "animate-fade-in" : "hidden"
+          "w-full grow group-data-[selected=false]/node text-white *:first:self-start flex max-lg:flex-col-reverse lg:justify-between px-4 md:px-8 text-start gap-10",
+          id !== selectedNode ? "hidden" : ""
         )}
       >
         {contentList[id]}
