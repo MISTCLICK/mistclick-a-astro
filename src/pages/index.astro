@@ -1,4 +1,10 @@
 ---
+import {
+  FileUserIcon,
+  MailIcon,
+  SquareArrowOutUpRightIcon,
+} from "@lucide/astro";
+
 import NodeCluster from "../components/react/NodeCluster";
 
 import "../styles/global.css";
@@ -9,10 +15,21 @@ import "../styles/global.css";
     <meta charset="utf-8" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
     <title>Arina Vasiļjeva</title>
+    <meta name="description" content="My online business card" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:image" content={"/icon.png"} />
+    <meta property="twitter:title" content="Arina Vasiļjeva" />
+    <meta property="twitter:description" content="My online business card" />
+    <meta property="og:image" content={"/icon.png"} />
+    <meta property="og:title" content="Arina Vasiļjeva" />
+    <meta property="og:description" content="My online business card" />
+    <meta name="theme-color" content="#6D28D9" />
   </head>
   <body class="*:max-w-[1920px] *:mx-auto">
-    <div id="hero" class="w-full h-192 group/hero">
+    <main id="hero" class="w-full h-192 group/hero">
       <h1
         class="text-center text-2xl sm:text-4xl lg:text-6xl px-1 pt-30 tracking-widest font-light"
       >
@@ -20,6 +37,82 @@ import "../styles/global.css";
         many faces...
       </h1>
       <NodeCluster client:visible />
-    </div>
+    </main>
+    <footer
+      id="foot"
+      class="flex justify-between pt-50 sm:pt-30 px-12 flex-wrap gap-x-4 gap-y-10"
+    >
+      <div
+        class="space-y-4 [&>*>a]:space-x-3 [&>*>a>*]:align-middle [&>*>a]:hover:opacity-80 [&>*>a]:transition-opacity text-primary"
+      >
+        <div>
+          <p class="border-b pb-1.5">Reach out to me!</p>
+        </div>
+        <div>
+          <a
+            href="mailto:ari@mistclick.me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MailIcon class="inline" />
+            <span>ari@mistclick.me</span>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/MISTCLICK"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="inline size-6"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#212121"
+            >
+              <title></title>
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              ></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/ari-v/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/cdn/InBug-Black.png" alt="" class="inline size-6" />
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div>
+          <a href="/cdn/CV_Arina.pdf" target="_blank" rel="noopener noreferrer">
+            <FileUserIcon class="inline" />
+            <span>My CV</span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="space-y-4 [&>*>a]:space-x-2 [&>*>a>*]:align-middle [&>*>a]:hover:opacity-80 [&>*>a]:transition-opacity text-primary"
+      >
+        <div class="pb-1.5 border-b">
+          <a
+            href="https://github.com/MISTCLICK/MISTCLICK"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Suggest changes to this page on GitHub</span>
+            <SquareArrowOutUpRightIcon class="inline" size={16} />
+          </a>
+        </div>
+        <p>
+          © 2023.-{new Date().getFullYear()}. Arina Vasiļjeva
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

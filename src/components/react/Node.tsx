@@ -308,7 +308,36 @@ const Aviation: React.FC = () => (
   </div>
 );
 
-const Teacher: React.FC = () => <></>;
+const Teacher: React.FC = () => (
+  <div className="flex max-2_5xl:flex-col justify-between w-full pr-10 gap-10 pb-5 2_5xl:text-lg">
+    <div className="max-w-200 space-y-4">
+      <p>
+        This is a face of mine that differs from all others the most, and,
+        unfortunately, it is also the least interesting one. As a consequence of
+        my academic achievements, I quickly started helping out friends prepare
+        for tests and then realised that this process could be monetised. After
+        starting secondary school I started taking on younger students from my
+        school to help them prepare for year 9 exams.
+      </p>
+      <p>
+        Over the years I became locally known, especially as my pool of students
+        and my involvement into my school's representation in the Rīga city
+        council both grew. The unexpected turn came a few months before the end
+        of my final year at school: there was a teacher shortage and rather
+        unexpectedly, the school came forward with a proposal for me to
+        substitute in certain maths, physics, English, and Latvian classes for a
+        short while to mitigate the effects of the shortage.
+      </p>
+      <p>
+        In the end I was even officially certified as a teacher. To be honest, I
+        have developed an actual passion for teaching and being an educator. The
+        experience being a teacher and a tutor gives me really helps out in
+        other areas of my expertise and makes me an all the more valuable team
+        member and leader.
+      </p>
+    </div>
+  </div>
+);
 
 const insetList = [
   "inset-x-[-45%_0]",
@@ -318,7 +347,13 @@ const insetList = [
   "inset-x-[45%_0]",
 ];
 
-const avatarList = ["about.jpg", "engineer.jpg", "dev.png", "atc.jpg", ""];
+const avatarList = [
+  "about.jpg",
+  "engineer.jpg",
+  "dev.png",
+  "atc.jpg",
+  "teacher.jpg",
+];
 const contentList = [
   <About />,
   <Engineer />,
