@@ -385,7 +385,7 @@ const Node: React.FC<NodeProps> = ({
         insetList[id],
         id !== selectedNode
           ? "animate-nimbus px-8 py-3"
-          : "bg-linear-to-br absolute mx-auto inset-x-0 from-primary top-1/2 md:top-1/2 -translate-y-1/4 md:-translate-y-1/2 to-primary/60 flex animate-article-show rounded-tl-3xl! rounded-md p-0 w-[90dvw] flex-col h-fit gap-y-5 z-10",
+          : "bg-linear-to-br absolute mx-auto inset-x-0 from-primary top-1/2 md:-translate-y-1/3 to-primary/60 flex animate-article-show rounded-tl-3xl! rounded-md p-0 w-[90dvw] flex-col h-fit gap-y-5 z-10",
         id === selectedNode
           ? id >= 3
             ? "bg-linear-to-bl rounded-tr-3xl! rounded-tl-md!"
