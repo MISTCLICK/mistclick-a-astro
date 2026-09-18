@@ -18,12 +18,12 @@ const NodeCluster: React.FC = () => {
     <SectionContext value={selectedNode}>
       <div
         id="node-supercontainer"
-        className="h-150 flex flex-col justify-end gap-y-10 w-full"
+        className="h-175 sm:h-150 flex flex-col justify-end gap-y-10 w-full max-sm:pt-10"
       >
         <p
           className={cn(
             "text-center group-hover/hero:opacity-100 opacity-0 transition-opacity text-xl tracking-wide",
-            !Number.isNaN(selectedNode) ? "opacity-0!" : ""
+            !Number.isNaN(selectedNode) ? "opacity-0!" : "",
           )}
         >
           I am a...
@@ -31,17 +31,17 @@ const NodeCluster: React.FC = () => {
 
         <div
           id="node-container"
-          className="flex justify-around items-end flex-wrap"
+          className="flex justify-around items-center sm:items-end sm:flex-wrap max-sm:flex-col *:flex-1 max-sm:gap-25"
         >
           <button
             className={cn(
               !Number.isNaN(selectedNode) && selectedNode !== 0
                 ? "pointer-events-none"
-                : ""
+                : "",
             )}
-            onClick={() =>
-              selectedNode === 0 ? setSelectedNode(NaN) : setSelectedNode(0)
-            }
+            // onClick={() =>
+            //   selectedNode === 0 ? setSelectedNode(NaN) : setSelectedNode(0)
+            // }
           >
             <Node
               id={0}
@@ -54,11 +54,11 @@ const NodeCluster: React.FC = () => {
             className={cn(
               !Number.isNaN(selectedNode) && selectedNode !== 1
                 ? "pointer-events-none"
-                : ""
+                : "",
             )}
-            onClick={() =>
-              selectedNode === 1 ? setSelectedNode(NaN) : setSelectedNode(1)
-            }
+            // onClick={() =>
+            //   selectedNode === 1 ? setSelectedNode(NaN) : setSelectedNode(1)
+            // }
           >
             <Node
               id={1}
@@ -71,11 +71,11 @@ const NodeCluster: React.FC = () => {
             className={cn(
               !Number.isNaN(selectedNode) && selectedNode !== 2
                 ? "pointer-events-none"
-                : ""
+                : "",
             )}
-            onClick={() =>
-              selectedNode === 2 ? setSelectedNode(NaN) : setSelectedNode(2)
-            }
+            // onClick={() =>
+            //   selectedNode === 2 ? setSelectedNode(NaN) : setSelectedNode(2)
+            // }
           >
             <Node
               id={2}
@@ -88,11 +88,11 @@ const NodeCluster: React.FC = () => {
             className={cn(
               !Number.isNaN(selectedNode) && selectedNode !== 3
                 ? "pointer-events-none"
-                : ""
+                : "",
             )}
-            onClick={() =>
-              selectedNode === 3 ? setSelectedNode(NaN) : setSelectedNode(3)
-            }
+            // onClick={() =>
+            //   selectedNode === 3 ? setSelectedNode(NaN) : setSelectedNode(3)
+            // }
           >
             <Node
               id={3}
@@ -105,11 +105,11 @@ const NodeCluster: React.FC = () => {
             className={cn(
               !Number.isNaN(selectedNode) && selectedNode !== 4
                 ? "pointer-events-none"
-                : ""
+                : "",
             )}
-            onClick={() =>
-              selectedNode === 4 ? setSelectedNode(NaN) : setSelectedNode(4)
-            }
+            // onClick={() =>
+            //   selectedNode === 4 ? setSelectedNode(NaN) : setSelectedNode(4)
+            // }
           >
             <Node
               id={4}

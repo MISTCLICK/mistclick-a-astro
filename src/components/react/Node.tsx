@@ -381,7 +381,7 @@ const Node: React.FC<NodeProps> = ({
     <section
       id="node"
       className={cn(
-        "group/node mb-6 max-w-[1920px] cursor-pointer",
+        "group/node mb-6 max-w-[1920px]",
         insetList[id],
         id !== selectedNode
           ? "animate-nimbus px-8 py-3"
@@ -393,7 +393,7 @@ const Node: React.FC<NodeProps> = ({
           : "",
         !Number.isNaN(selectedNode) && id !== selectedNode
           ? "blur-xs opacity-60"
-          : ""
+          : "",
       )}
       style={{ animationDelay: `-${animationDelay}ms` }}
       data-selected={id === selectedNode}
@@ -408,7 +408,7 @@ const Node: React.FC<NodeProps> = ({
               ? "flex-row-reverse"
               : "flex-row"
             : "",
-          "flex"
+          "flex",
         )}
       >
         <div id="node-label">
@@ -418,7 +418,7 @@ const Node: React.FC<NodeProps> = ({
           id="node-description"
           className={cn(
             "group-data-[selected=true]/node:text-white group-data-[selected=true]/node:text-xl lg:group-data-[selected=true]/node:text-2xl group-data-[selected=true]/node:mt-3 group-data-[selected=true]/node:mx-4 group-data-[selected=true]/node:tracking-wider group-data-[selected=true]/node:font-medium",
-            id === selectedNode ? "opacity-100!" : ""
+            id === selectedNode ? "opacity-100!" : "",
           )}
         >
           {description}
@@ -427,7 +427,7 @@ const Node: React.FC<NodeProps> = ({
       <article
         className={cn(
           "w-full grow group-data-[selected=false]/node text-white *:first:self-start flex max-lg:flex-col-reverse lg:justify-between px-4 md:px-8 text-start gap-10",
-          id !== selectedNode ? "hidden" : ""
+          id !== selectedNode ? "hidden" : "",
         )}
       >
         {contentList[id]}
